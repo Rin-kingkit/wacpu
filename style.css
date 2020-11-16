@@ -1,26 +1,235 @@
-  
-  body {
+
+html{
+  font-size: 16px;  /* 1 rem = 16 px */
+}
+body {
     width: 100%;
     height: 100%;
     margin: 0;
-  }
-  * {
+    padding: 0;
+    line-height: 1;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+* {
+    font-size: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif, PingFang,'Microsoft JhengHei';
-    }
-.container{
+    vertical-align: baseline;  
+    box-sizing: border-box;
+    position: relative;
+}
+ol, ul {
+  list-style: none;
+}
 
-    
+
+:root{
+  --word-color:#2F2F2F;
+  --logo-yellow:#F4AA14;
+  --logo-green:#0B8D97;
+  --logo-yellow-light:#FFD06F;
+  --logo-green-light:#18CCD9;
+  --background-color:#fff;
+
 }
 p{
-  font-size: 18px;
+  font-size: ;
+  color: var(--word-color);
 }
 a {
   text-decoration: none;
-
-  }
+}
 h1{
-    width: 100%;
 
+}
+h3 {
+  color: var(--word-color);
+  font-size: 1.375rem;
+  }
+
+
+header{
+  height: 55px;
+  border: 1px solid var(--word-color);
+  display: flex;
+}
+.header-container {
+  display: flex;
+  margin-left: 6.6%;
+  }
+#logo {
+  width: 10.3rem;
+  margin: auto;
+  }
+.container{
+  width: 100%;
+  height: calc(100vh - 55px);
+  width: min(85%);
+  margin: auto;
+}
+
+.banner-block {
+  width: 100%;
+  height: calc(100vh - 55px);
+display: flex;
+flex-direction: column;
+  }
+.banner {
+    width: 100%;
+    height: 388px;
+    background-color: #000;
+    margin: 30px auto 30px auto;
+}
+.banner-style{
+  background-image: url(img/banner.jpg);
+  background-size: cover;
+  background-position-x: center;
+  border-radius: 0.94rem;
+  box-shadow: 0.3rem 0.25rem 0px var(--logo-green);
+}
+.intro{
+  font-size: 1rem;
+  margin: auto 5px;
+}
+.intro-style{
+  line-height: 1.75rem;
+  letter-spacing: 0.23rem;
+  color: var(--word-color);
+}
+.down {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  height: 2rem;
+  display: flex;
+}
+.down img {
+  margin: auto;
+  width: 7%;
+  }
+
+/********************** main ***********************/
+  main {
+    width: 100%;
+    height: 100%;
+}
+
+.about {
+  height: 100%;
+  width: 100%;
+}
+.subject {
+   margin-top: 5rem;
+   display: flex;
+   flex-direction: column;
+}
+.subject h2 {
+  margin: auto;
+  font-size: 1.75rem;
+  /* border-bottom: 0.44rem solid var(--logo-green-light); */
+}
+.subject p {
+  margin-top: 2.2rem;
+  line-height: 1.56rem;
+  letter-spacing: 0.1rem;
+  font-size: 0.94rem;
+}
+.about-container {
+  margin-top: 3.125rem;
+  width: 100%;
+  height: ;
+}
+.about-block{
+  display: flex;
+  flex-direction: column;
+  gap: 1.56rem;
+}
+.about-pic {
+  width: 100%;
+  height: 14rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.94rem;
+  box-shadow: 0.31rem 0.31rem 0 var(--logo-green);
+  }
+  .about01-pic{
+    background-image: url(img/about01.jpg);
+  }
+  .about02-pic{
+    background-image: url(img/about02.jpeg);
+  }
+  .about03-pic{
+    background-image: url(img/about03.jpeg);
+  }
+.about-content {
+    display: grid;
+    grid-template-rows: 7.875rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2.7rem;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about01-content {
+  background-image: url(img/about01-background.svg);
+}
+
+.number{
+  font-size: 5.625rem;
+  font-weight: bold;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.number-style{
+  color: #72CAD1;
+}
+.about-content h3 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin-top: 2rem;
+  line-height: 3rem;
+  justify-self: right;
+}
+.depiction{
+  font-size: 0.875rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+
+
+
+
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  html{
+    font-size: ;
+  }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  html{
+    font-size: ;
+  }
+ }
+
+/* / Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ]
+  html{
+    font-size: ;
+  }
+}
+
+/* / Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  html{
+    font-size: ;
+  }
 }
