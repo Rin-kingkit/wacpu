@@ -17,7 +17,7 @@ body{
     font-size: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif, PingFang,'Microsoft JhengHei';
+    font-family: Arial, sans-serif, PingFang,'Microsoft JhengHei';
     vertical-align: baseline;  
     box-sizing: border-box;
     position: relative;
@@ -154,7 +154,7 @@ flex-direction: column;
   top: -1rem;
 }
 .teacher .underline::after{
-  background-color:var(--logo-yellow-light)
+  background-color: var(--logo-yellow);
 }
 
 
@@ -218,14 +218,16 @@ background-position: bottom;
 }
 
 .number{
-  font-size: 5.625rem;
-  font-weight: bold;
+  font-size: 5.6rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
   grid-row: 1/2;
   grid-column: 1/2;
-  letter-spacing: 0.7rem;
 }
 .number-style{
-  color: #72CAD1;
+  color: #72CAD1CC;
+  font-weight: 500;
+  font-family: PingFang TC;
 }
 .about-content h3 {
   grid-row: 1/2;
@@ -307,8 +309,8 @@ background-position: bottom;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10%;
-  padding-bottom: 15.6%;
+  padding-top: 14%;
+  padding-bottom: 16.6%;
 }
 .teacher-photo {
   width: max(3.5rem,24%);
@@ -357,7 +359,7 @@ background-position: bottom;
 #contact h2 {
   font-size: 1.75rem;
   color: #fff;
-  font-weight: normal;
+  font-weight: 300;
   }
 hr {
   width: 100%;
@@ -368,7 +370,7 @@ hr {
 }
 .contact-link-box {
   margin-top: 0.3125rem;
-  width: 96%;
+  width: min-content;
   /* height: 7.0625rem; */
   display: flex;
   flex-direction: column;
@@ -387,7 +389,7 @@ hr {
   align-items: center;
 }
 .contact-link img {
-  margin-right: 5%;
+  margin-right: 3%;
   width: 1.3125rem;
   min-width: 1.3125rem;
 }
@@ -395,6 +397,8 @@ hr {
   color: #fff;
   font-size: 0.94rem;
   white-space: nowrap;
+  font-weight: 400;
+  font-family: PingFang TC;
 }
 .back-to-top {
   margin-top: 2.8125rem;
