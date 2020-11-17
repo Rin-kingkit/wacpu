@@ -81,7 +81,7 @@ flex-direction: column;
   }
 .banner {
     width: 100%;
-    height: 388px;
+    height: 21.125rem;
     background-color: #000;
     margin: 30px auto 30px auto;
 }
@@ -282,7 +282,7 @@ background-position: bottom;
   overflow-x: scroll;
   width: max(70vw,15rem);
   height: max(62vw,15rem);
-  scroll-snap-type: x proximity;
+  scroll-snap-type: x mandatory;
 }
 .teacher-bar {
   display: flex;
@@ -401,8 +401,13 @@ hr {
   font-family: PingFang TC;
 }
 .back-to-top {
-  margin-top: 2.8125rem;
-  }
+  margin: 3.5rem auto auto auto;
+  width: min(9%,46px);
+}
+.back-to-top img {
+  width: 100%;
+}
+
 /**************************** footer ***********************/
 footer {
   background-image: url(img/footer-img.png);
@@ -420,27 +425,138 @@ footer {
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   html{
-    font-size: ;
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 1.5rem;
   }
  }
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   html{
-    font-size: ;
+    font-size: 24px;
+  }
+  .intro {
+    font-size: 0.83rem;
+  }
+  .intro-style {
+    line-height: 1.25rem;
+  }
+  .down img {
+    width: 4%;
+  }
+  .underline::after {
+    top: -0.32rem;
+    height: 0.42rem;
+    border-radius: 0.1rem;
+  }
+  .about-content > .underline::after {
+    top: -1.14rem;
+  }
+  .about-pic {
+    height: 17rem;
+    box-shadow: 0.28rem 0.28rem 0 var(--logo-green);
+  }
+  .container {
+    width: min(88%);
+  }
+  .contact-link-box {
+    align-items: baseline;
+    margin: 3.5% auto auto auto;
+  }
+  .contact-link {
+    width: 440px;
+    margin-top: 1.25rem;
+  }
+  .contact-link img {
+    margin-right: 6%;
   }
  }
 
 /* / Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ]
+@media (min-width: 992px) { 
   html{
-    font-size: ;
+    font-size: 18px;     /* 56pt = 40px ; 25pt = 18px */
   }
+  .container {
+    width: min(90%,1640px);
+  }
+  .about {  
+    padding-top: 6rem;
+  }
+  .subject {
+    text-align: center;
+  }
+  .subject h2{
+    font-size: 2.24rem;
+  }
+  .subject p {
+    font-size: 1rem;
+  }
+  .about-block {
+    flex-direction: row;
+    height: 22.4rem;
+    justify-content: space-between;
+    gap: unset;
+  }
+  .about02{
+    flex-direction: row-reverse;
+  }
+
+  .about-pic {
+    height: unset;
+    width: 60%;
+    height: 22rem;
+  }
+  .about-content {
+    width: 30%;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: baseline;
+  }
+  .about-content h3 {
+    margin-top: 0;
+  }
+  .depiction {
+    line-height: 1.5rem;
+  }
+  .number {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .teacher .subject > p {
+    width: 44rem;
+    margin: 2.84rem auto 0 auto;
+  }
+
+
+
+
+  footer{
+    background-image: url(img/footer.png);
+    height: 18rem;
+  }
+
+
+
 }
 
 /* / Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
   html{
     font-size: ;
+  }
+  .about-pic {
+    width: 49%;
+  }
+  .about-content {
+    width: 41%;
+  }
+  h3 {
+    font-size: 2.8rem;
   }
 }
