@@ -280,6 +280,7 @@ background-position: bottom;
   overflow-x: scroll;
   width: max(70vw,15rem);
   height: max(62vw,15rem);
+  scroll-snap-type: x proximity;
 }
 .teacher-bar {
   display: flex;
@@ -293,7 +294,8 @@ background-position: bottom;
   height: max(60vw,14rem);
   background-color: #fff;
   border-radius: 50%;
-  }
+  scroll-snap-align: center;
+}
 .teacher-circle-style{
   border: 0.1875rem solid var(--word-color);
   box-shadow: 0.1875rem 0.125rem var(--logo-yellow);
@@ -313,7 +315,8 @@ background-position: bottom;
 }
 .teacher-name {
   font-size: 1.2rem;
-  font-weight: 450;
+  font-weight: 500;
+  font-weight: bold;
 }
 .teacher-exp {
   font-size: 0.6875rem;
