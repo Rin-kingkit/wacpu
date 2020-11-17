@@ -132,11 +132,39 @@ flex-direction: column;
   font-size: 1.75rem;
   /* border-bottom: 0.44rem solid var(--logo-green-light); */
 }
+
+
+.underline{
+  z-index: 2;
+}
+.underline::after {
+  content: "";
+  width: 104%;
+  top: -0.25rem;
+  left: -2%;
+  height: 0.4375rem;
+  position: relative;
+  display: block;
+  background-color: var(--logo-green-light);
+  z-index: -1;
+  border-radius: 0.125rem;
+}
+.about-content>.underline::after{
+  background-color:var(--logo-yellow-light);
+  top: -1rem;
+}
+.teacher .underline::after{
+  background-color:var(--logo-yellow-light)
+}
+
+
+
 .subject p {
   margin-top: 2.2rem;
   line-height: 1.56rem;
   letter-spacing: 0.1rem;
   font-size: 0.94rem;
+  word-break: break-all;
 }
 .about-container {
   margin-top: 3.125rem;
@@ -225,6 +253,7 @@ background-position: bottom;
 /********************** teacher ***********************/
 .teacher {
   padding-top: 5rem;
+  padding-bottom: 5.625rem;
   background-color: #4E4D52;
 }
 .teacher .subject>h2{
@@ -235,8 +264,68 @@ background-position: bottom;
 }
 .teacher-content {
   margin-top: 2.8125rem;
-  height: 15rem;
+  height: 70vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.teacher-arrow{
+  width: 5%;
+}
+.teacher-arrow img{
+  width: 100%;
+}
+.teacher-frame {
+  overflow-x: scroll;
+  width: max(70vw,15rem);
+  height: max(62vw,15rem);
+}
+.teacher-bar {
+  display: flex;
+  gap: 30vw;
+  padding-left: 4vw;
+  position: absolute;
+  padding-right: 4vw;
+}
+.teacher-circle {
+  width: max(60vw,14rem);
+  height: max(60vw,14rem);
+  background-color: #fff;
+  border-radius: 50%;
   }
+.teacher-circle-style{
+  border: 0.1875rem solid var(--word-color);
+  box-shadow: 0.1875rem 0.125rem var(--logo-yellow);
+}
+.teacher-circle-inside{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10%;
+  padding-bottom: 15.6%;
+}
+.teacher-photo {
+  width: max(3.5rem,24%);
+}
+.teacher-name {
+  font-size: 1.2rem;
+  font-weight: 450;
+}
+.teacher-exp {
+  font-size: 0.6875rem;
+  color: var(--word-color);
+  opacity: 0.78;
+  text-align: center;
+  word-break: keep-all;
+  line-height: 0.85rem;
+}
+
+
+
 
   /********************** contact ***********************/
 #contact {
@@ -297,6 +386,7 @@ hr {
 .contact-link img {
   margin-right: 5%;
   width: 1.3125rem;
+  min-width: 1.3125rem;
 }
 .contact-link p {
   color: #fff;
