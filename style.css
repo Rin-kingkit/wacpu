@@ -56,7 +56,7 @@ h3 {
 
 header{
   height: 55px;
-  border: 1px solid var(--word-color);
+  box-shadow: 0 3px 5px #0000000f;
   display: flex;
 }
 .header-container {
@@ -281,9 +281,21 @@ background-position: bottom;
 .teacher-frame {
   overflow-x: scroll;
   width: max(70vw,15rem);
-  height: max(62vw,15rem);
+  height: max(65vw,15rem);
   scroll-snap-type: x mandatory;
+  scrollbar-color: rgba(255, 255, 255, 0.26) transparent;
+  scrollbar-width: thin;
 }
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.26);
+  border-radius: 20px;  
+}
+
 .teacher-bar {
   display: flex;
   gap: 30vw;
@@ -479,8 +491,17 @@ footer {
   html{
     font-size: 18px;     /* 56pt = 40px ; 25pt = 18px */
   }
+  header {
+    height: 80px;
+  }
   .container {
     width: min(90%,1640px);
+  }
+  .banner-block {
+    height: calc(100vh - 80px);
+  }
+  .banner {
+    height: 77.5vh;
   }
   .about {  
     padding-top: 6rem;
@@ -500,6 +521,12 @@ footer {
     justify-content: space-between;
     gap: unset;
   }
+  .about-container {
+    margin-top: 6rem;
+  }
+  .about02, .about03 {
+    margin-top: 10rem;
+    }
   .about02{
     flex-direction: row-reverse;
   }
@@ -515,9 +542,19 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   align-items: baseline;
+  background-size: unset;
+    background-position: center;
   }
   .about-content h3 {
     margin-top: 0;
+  }
+  .underline::after {
+    top: -0.51rem;
+    height: 0.64rem;
+  }
+  .about-content > .underline::after {
+    top: -0.95rem;
+    height: 0.56rem;
   }
   .depiction {
     line-height: 1.5rem;
@@ -528,11 +565,79 @@ footer {
   h3 {
     font-size: 2rem;
   }
+  .teacher{
+    padding-top: 8rem;
+  }
   .teacher .subject > p {
     width: 44rem;
     margin: 2.84rem auto 0 auto;
+    text-align: left;
   }
-
+  .teacher-circle {
+    width: 21.44rem;
+    height: 21.44rem;
+  }
+  .teacher-content {
+    height: 45vw;
+  }
+  .teacher-frame {
+    width: 27.44rem;
+    height: 23.44rem;
+  }
+  .teacher-arrow {
+    width: 3%;
+  }
+  .teacher-photo {
+    width: 5.12rem;
+}
+    .teacher-circle-inside {
+    padding-top: 4rem;
+    justify-content:unset;
+  }
+    .teacher-name {
+    font-size: 1.6rem;
+    margin-top: 1.064rem;
+  }
+    .teacher-exp {
+    font-size: 0.76rem;
+    line-height: 1.04rem;
+    max-width: 230px;
+    margin-top: 0.6rem;
+  }
+     /********************** contact ************/
+     #contact{
+       padding: 6.4rem 0;
+     }
+     .contact-block {
+      height: 11.8rem;
+    }
+    .contact-content {
+      flex-direction: row;
+      height: 7rem;
+      width: 83%;
+    }
+    #contact h2 {
+      font-size: 1.72rem;
+    }
+    hr {
+      width: 1px;
+      height: 100%;
+      margin: 0;
+      margin-left: 2rem;
+  }
+  .contact-link-box {
+    margin: auto;
+    height: 100%;
+    margin-left: 2rem;
+  }
+  .contact-link {
+    margin: auto;
+  }
+  .back-to-top {
+    margin: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 
 
 
@@ -550,13 +655,23 @@ footer {
   html{
     font-size: ;
   }
+  .container {
+    width: min(88%,1640px);
+  }
   .about-pic {
-    width: 49%;
+    width: 50%;
   }
   .about-content {
-    width: 41%;
+    width: 35%;
   }
   h3 {
     font-size: 2.8rem;
+  }
+  .about-content > .underline::after {
+    top: -0.5rem;
+  }
+  .teacher .subject > p {
+    width: 50rem;
+    line-height: 1.5rem;
   }
 }
