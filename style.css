@@ -101,8 +101,8 @@ flex-direction: column;
   color: var(--word-color);
 }
 .down {
-  margin-top: 2.125rem;
-  margin-bottom: 0.75rem;
+  margin-top: auto;
+  margin-bottom: 3vh;
   height: 2rem;
   display: flex;
 }
@@ -339,6 +339,7 @@ background-position: bottom;
   text-align: center;
   word-break: keep-all;
   line-height: 0.85rem;
+  max-width: 14.25rem;
 }
 
 
@@ -404,6 +405,10 @@ hr {
   margin-right: 3%;
   width: 1.3125rem;
   min-width: 1.3125rem;
+  transition: 0.3s;
+}
+.contact-link a:hover img{
+  transform: rotate(-15deg);
 }
 .contact-link p {
   color: #fff;
@@ -414,10 +419,20 @@ hr {
 }
 .back-to-top {
   margin: 3.5rem auto auto auto;
-  width: min(9%,46px);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.back-to-top img {
-  width: 100%;
+.back-to-top svg {
+  width: 50%;
+  margin: auto;
+  transition: 0.3s;
+}
+.back-to-top:hover svg{
+  transform: translateY(-25%);
 }
 
 /**************************** footer ***********************/
@@ -567,6 +582,7 @@ footer {
   }
   .teacher{
     padding-top: 8rem;
+    padding-bottom: 3.5rem;
   }
   .teacher .subject > p {
     width: 44rem;
@@ -578,7 +594,8 @@ footer {
     height: 21.44rem;
   }
   .teacher-content {
-    height: 45vw;
+    height: 40vw;
+    margin-top: 1.6rem;
   }
   .teacher-frame {
     width: 27.44rem;
@@ -611,13 +628,17 @@ footer {
      .contact-block {
       height: 11.8rem;
     }
+    .contact-block-style {
+      border-radius: 0.8rem;
+    }
     .contact-content {
       flex-direction: row;
       height: 7rem;
       width: 83%;
     }
     #contact h2 {
-      font-size: 1.72rem;
+      font-size: 1.5rem;
+      
     }
     hr {
       width: 1px;
@@ -633,6 +654,14 @@ footer {
   .contact-link {
     margin: auto;
   }
+  .contact-link img {
+    margin-right: 1rem;
+  }
+  .contact-link a {
+    width: min-content;
+    
+  }
+  
   .back-to-top {
     margin: 0;
     width: 2.4rem;
@@ -673,5 +702,14 @@ footer {
   .teacher .subject > p {
     width: 50rem;
     line-height: 1.5rem;
+  }
+  #contact h2{
+    font-size: 1.72rem;
+  }
+  hr{
+    margin-left: 3rem;
+  }
+  .contact-link-box{
+    margin-left: 3rem;
   }
 }
