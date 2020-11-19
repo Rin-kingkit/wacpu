@@ -234,6 +234,7 @@ background-position: bottom;
   color: #72CAD1CC;
   font-weight: 500;
   font-family: PingFang TC;
+  opacity: 0.5;
 }
 .about-content h3 {
   grid-row: 1/2;
@@ -539,7 +540,7 @@ footer {
   }
   .about-block {
     flex-direction: row;
-    height: 22rem;
+    height: 20rem;
     gap: 8%;
   }
   .about-container {
@@ -554,24 +555,25 @@ footer {
     }
   .about02, .about03 {
     margin-top: 10rem;
-    }
+    height: 18rem;
+}
 
   .about-pic {
     height: unset;
-    width: 60%;
+    width: 58%;
     height: 100%;
   }
   .about-content {
     display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: baseline;
-  background-size: unset;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    background-size: unset;
     background-position: center;
-    width: 32%;
+    width: 34%;
   }
   .about-content h3 {
-    margin-top: 0;
+    margin-top: -2rem;
   }
   .underline::after {
     top: -0.51rem;
@@ -585,7 +587,8 @@ footer {
     line-height: 1.5rem;
   }
   .number {
-    font-size: 4rem;
+    font-size: 7rem;
+    top: -1rem;
   }
   h3 {
     font-size: 2rem;
@@ -698,10 +701,14 @@ footer {
     font-size: ;
   }
   .container {
-    width: min(88%,1640px);
+    width: min(85%,1640px);
   }
+  .about-block {
+    gap: 10%;  
+  }
+
   .about-pic {
-    width: 48%;
+    width: 50%;
   }
   .about-content {
     width: 40%;
