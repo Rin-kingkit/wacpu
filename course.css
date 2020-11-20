@@ -18,6 +18,7 @@ h6 {
 
 .course-banner-style{
     background-image: url(img/course-banner.JPG);
+    height: 23rem;
 }
 .banner-block-small{
     height: 68vh;
@@ -192,6 +193,13 @@ li::marker {
 }
 .exam-content > ul {
     margin-top: 0.625rem;
+    list-style-type: square;
+    /* list-style-position: inside; */
+    padding-left: 3.6%;
+    line-height: 2rem;
+}
+li::marker {
+    font-size: 12px;
 }
  /****************************** how  *********************/
 #how {
