@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="img/wacpu-ico.ico" type="image/x-icon" >
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="course.css">
+
 </head>
 <body>
     <header>
@@ -16,48 +18,161 @@
         </div>
     </header>
     <div style="" class="container" >
-        <div class="banner-block">
-            <div class="banner banner-style"></div>
-            <p class="intro intro-style">Webduino 認證中心提供認證課程與官方講師培訓計畫，讓對於物聯網學習與授課有興趣的你，和我們一起合作推廣程式教育。</p>
-            <div class="down">
-                <img src="img/arrow-down-logo-green.svg" alt="down">
-            </div>
+        <div class="banner-block banner-block-small">
+            <div class="banner banner-style course-banner-style"></div>
         </div>
+
     </div>    
+    <div class="banner-bg-white"></div>
+
 
     <main>
         <div id="course">
             <div class="subject">
                 <h2 class="underline">認證課程</h2>
              </div>
-             <div class="btn-bar">
-                 <div class="btn"></div>
-                 <div class="btn"></div>
-                 <div class="btn"></div>
-             </div>
-             <div class="course-content-box">
-                 <div class="course-content level1 "></div>
+            <div class="container">
+                <div class="btn-bar">
+                    <div class="btn btn-on">
+                        <p class="btn-text btn-text-on">LEVEL 1</p>
+                    </div>
+                    <div class="btn btn-off">
+                        <p class="btn-text btn-text-off">LEVEL 2</p>
+                    </div>
+                    <div class="btn btn-off">
+                        <p class="btn-text btn-text-off">專案學生 / 教師認證課程</p>
+                    </div>
+                 </div>
              </div>
         </div>
-        <div id="exam">
+             <div class="course-block">
+                 <div class="course-frame level1 ">
+                     <div class="course-name">
+                         <h3>LEVEL 1</h3>
+                     </div>
+                     <div class="course-box word-small">
+                         <div class="container">
+                            <p class="course-intro word-small word-color-light">本課程將實際搭配多種生活範例，引領初學者入門，無論是跨裝置互動控制、環境數據集、儲存至資料庫皆不成問題，通過認證考試後，將具備基礎的運算思維的概念，並有資格成為Webduino 助理講師的一員。</p>
+                            <div class="course-content">
+                             <h6 class="underline">課程特色</h6>
+                             <ul class="word-color-light">
+                                 <li class="word-small">原廠授權之課程、教材</li>
+                                 <li>12 小時精實的物聯網課程培訓</li>
+                                 <li>帶走物聯網基礎開發套件組</li>
+                                 <li>了解運算思維概念與應用 ( 變數、邏輯、迴圈...等 )</li>
+                                 <li>多元控制的豐富範例 ( 多台連動、結合網路與行動裝置應用 )</li>
+                                 <li>課後考試認證通過頒發證書，並具備「官方助理講師資格</li>
+                                 <li>包含午餐</li>
+                             </ul>
+                            </div>
+                            <div class="course-content">
+                                 <h6 class="underline">課程材料包</h6>
+                                 <p class="word-color-light">Dr. Smart 開發者套件包</p>
+                            </div>
+                            <div class="course-content">
+                                 <h6 class="underline">考試方式</h6>
+                                 <ul class="word-color-light">
+                                     <li>通過學科考試</li>
+                                      <li>完成術科考試</li>
+                                     <li>評鑑上台試教狀況</li>
+                                 </ul>
+                             </div>
+
+                         </div>
+                        
+                     </div>
+                 </div>
+             </div>
+        </div>
+
+
+        <div id="exam" class="exam">
             <div class="subject">
                 <h2 class="underline">認證考試</h2>
              </div>
-             <div class="student-exam"></div>
-             <div class="teacher-exam"></div>
-
+             <div class="exam-block">
+                <div class="student-exam exam-frame">
+                    <div class="exam-pic">
+                        <img src="img/exam1.jpg" alt="">
+                    </div>
+                    <div class="exam-box">
+                       <div class="exam-content-box word-small word-color-light">
+                           <h3>官方學習歷程認證</h3>
+                           <p>( Level 1 /  Level 2 )</p>
+                            <div class="exam-content">
+                                <h6>認證對象：</h6>
+                                <ul>
+                                    <li>在學學生、自學團體、有興趣之教學工作者</li>
+                                </ul>
+                            </div>
+                            <div class="exam-content">
+                                <h6>考試內容：</h6>
+                                <ul>
+                                   <li>如上相關課程之內容，包含筆試、術科、現場實地操作。</li>
+                                </ul>
+                            </div>
+                            <div class="exam-content">
+                                <h6>考試時間：<span>於官網公布</span></h6>
+                            </div>
+                            <div class="exam-content">
+                                <h6>考試地點：<span>Webduino 官方原廠 / 慶奇科技 ( 高雄 )</span></h6>
+                            </div>  
+   
+                       </div>
+                    </div>
+                </div>
+                <div class="teacher-exam exam-frame">
+                   <div class="exam-pic">
+                       <img src="" alt="">
+                   </div>
+                   <div class="exam-box">
+                      <div class="exam-content-box word-small word-color-light">
+                          <h3>官方講師認證</h3>
+                          <div class="exam-content">
+                            <h6>認證對象：</h6>
+                            <ul>
+                                <li>已經通過 Level 2 之有興趣從事長期教學之工作者</li>
+                                <li>願意推廣 Webduino 相關領域之研究、教學、課程教案顧問者</li>
+                            </ul>
+                          </div>
+                          <div class="exam-content">
+                            <h6>考試內容：</h6>
+                                <ul>
+                                    <li>如上相關課程之內容</li>
+                                    <li>實際跟課助教 20 小時，現場實際教學 40 小時，並採取樣錄影。</li>
+                                </ul>
+                          </div>
+                          <div class="exam-content">
+                            <h6>考試時間：<span>於官網公布</span></h6>
+                          </div>
+                          <div class="exam-content">
+                            <h6>考試地點：<span>Webduino 官方原廠 / 慶奇科技 ( 高雄 )</span></h6>
+                          </div>
+      
+                      </div>
+                   </div>
+                </div>
+             </div>
         </div>
 
 
 
         <div id="how">
-            <div class="container"></div>
+            <div class="container">
+                <div class="how-block">
+                    <div class="how-content word-small">
+                        <h2>如何報名？</h2>
+                        <p>相關課程及認證考試流程請詳洽Webduino 認證中心</p>
+                    </div>
+                </div>
+                <div class="back-to-top">
+                    <!-- <img src="img/back-to-top.svg" alt=""> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24.546" height="14.464" viewBox="0 0 24.546 14.464">
+                        <path id="keyboard_arrow_right-black-18dp" d="M22.819,27.2,14.3,18.679l8.522-8.522a2.19,2.19,0,0,0-3.1-3.1L9.64,17.142a2.187,2.187,0,0,0,0,3.1L19.722,30.321a2.187,2.187,0,0,0,3.1,0,2.234,2.234,0,0,0,0-3.119Z" transform="translate(30.963 -8.998) rotate(90)" fill="#fff"/>
+                    </svg>     
+                </div>
+            </div>
         </div>
-
-
-
-
-
 
     </main>
 
