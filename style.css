@@ -362,7 +362,7 @@ background-position: bottom;
 }
 .green-block-style {
   background-color: var(--logo-green-middle);
-  border-radius: 0.94rem;
+  border-radius: 0.4rem;
 }
 .contact-content {
   margin: auto;
