@@ -1,0 +1,68 @@
+:root{
+    --word-color:#2F2F2F;
+    --logo-yellow:#F4AA14;
+    --logo-green:#0B8D97;
+    --logo-yellow-light:#FFD06F;
+    --logo-green-light:#18CCD9;
+    --background-color:#fff;
+    --close-white-color:#FDFEFC;
+    --logo-green-middle:#10A4AF;
+    --word-color-light:#313131;
+    --word-color-light-light:#696969;
+    --bg-dark:#4E4D52;
+  }
+
+
+.resume-banner-style{
+    background-image: url(img/resume-banner.JPG);
+    background-position: right;
+    height: 60vh;
+    margin-bottom: 13vh;
+}
+.banner-block-resume {
+    height: calc(100vh - 55px);
+}
+main {
+    background-color: var(--logo-green-light);
+    padding-top: 3.125rem;
+}
+.collaboration {
+    width: 100%;
+}
+.collaboration-block {
+    background-color: #fff;
+    height: 10.375rem;
+    border-radius: 0.3125rem;
+}
+.collaboration-container {
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 0.9375rem 1.25rem 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.collaboration h2 {
+    font-size: 1.25rem;
+    text-align: center;
+}
+.collaboration-btn {
+    width: 100%;
+    text-align: center;
+    height: 3rem;
+    font-size: 1.125rem;
+    background-color: var(--logo-green);
+    display: flex;
+    border-radius: 0.625rem;
+    align-items: center;
+}
+.collaboration-btn p {
+    color: #fff;
+    margin: auto;
+}
+.collaboration-btn svg {
+    width: 0.9375rem;
+    position: absolute;
+    right: 1.75rem;
+    margin: auto;
+}
