@@ -471,6 +471,9 @@ footer {
   html{
     font-size: 24px;
   }
+  .word-small{
+    font-size: 0.8rem;
+  }
   .intro {
     font-size: 0.83rem;
   }
@@ -514,6 +517,9 @@ footer {
 @media (min-width: 992px) { 
   html{
     font-size: 18px;     /* 56pt = 40px ; 25pt = 18px */
+  }
+  .word-small{
+    font-size: 0.94rem;
   }
   header {
     height: 80px;
@@ -643,7 +649,7 @@ footer {
       height: 11.8rem;
     }
     .green-block-style {
-      border-radius: 0.8rem;
+      border-radius: 0.4rem;
     }
     .contact-content {
       flex-direction: row;
