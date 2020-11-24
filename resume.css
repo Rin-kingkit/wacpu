@@ -113,7 +113,10 @@ main {
 
 /******************************** list ******************/
 .popup{
-    /* display: none; */
+    display: block !important;
+}
+.back-fixed{
+    overflow: hidden;
 }
 .list {
     position: fixed;
@@ -123,6 +126,7 @@ main {
     left: 0;
     background-color: #343434;
     z-index: 2;
+    display: none;
 }
 .list-block {
     height: 91vh;

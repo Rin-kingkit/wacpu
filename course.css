@@ -57,6 +57,7 @@ main{
 .btn-off{
     background-color: #fff;
     transition: 0.15s ease-out;
+    cursor: pointer;
 }
 .btn-off:hover{
     background-color: var(--logo-yellow);
@@ -64,7 +65,8 @@ main{
 }
 .btn-off:hover .btn-text-off{
     color: #fff;
-    letter-spacing: 0.1rem;
+    /* letter-spacing: 0.1rem; */
+    /* max-width: 75%; */
 }
 .btn-text{
     font-size: 0.75rem;
@@ -91,6 +93,12 @@ main{
     border: 0.1875rem solid var(--logo-green-middle);
     background-color: #fff;
     border-radius: 0.1875rem;
+}
+.level1{
+    display: block;
+}
+.level2,.level3{
+    display: none
 }
 
 .course-name {
