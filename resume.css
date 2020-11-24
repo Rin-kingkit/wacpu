@@ -56,9 +56,12 @@ main {
     font-size: 1.125rem;
     background-color: var(--logo-green);
     display: flex;
-    border-radius: 0.625rem;
+    border-radius: 0.45rem;
     align-items: center;
+    cursor: pointer;
+    align-self: center;
 }
+
 .collaboration-btn p {
     color: #fff;
     margin: auto;
@@ -68,7 +71,12 @@ main {
     position: absolute;
     right: 1.75rem;
     margin: auto;
+    transition: 0.3s;
 }
+.collaboration-btn:hover svg{
+    transform: rotate(-15deg);
+}
+
 .photo {
     width: 100%;
     background-color: #4E4D52;
@@ -103,7 +111,7 @@ main {
 
 /******************************** list ******************/
 .popup{
-    /* display: none; */
+    display: none;
 }
 .list {
     position: fixed;
@@ -176,4 +184,87 @@ main {
 .cross svg {
     margin: auto;
     cursor: pointer;
+}
+
+
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .collaboration-btn {
+        max-width: 21rem;
+        height: 2.7rem;
+    }
+    .resume-banner-style {
+        height: 67vh;
+        margin-bottom: 7vh;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .photo-container {
+        width: min(88%);
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 4%;
+    }
+    .photo-box {
+        height: 100%;
+    }
+    .photo-img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .resume-banner-style {
+        margin-bottom: 6vh;
+        height: 76vh;
+        margin-bottom: 12vh;
+        margin-top: 7vh;
+    }
+    .banner-block-resume {
+        height: unset;
+        padding-bottom: 5rem;
+    }
+    main {
+        padding-top: 5rem;
+    }
+    .collaboration {
+        margin-bottom: 5rem;
+    }
+    .collaboration-container {
+        padding: 0 7.5% 0 8.5%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .collaboration-block {
+        height: 7.44rem;
+    }
+    .collaboration-btn {
+        max-width: 13rem;
+        justify-content: space-evenly;
+        padding: 0px 2% 0 4%;
+    }
+    .collaboration-btn p {
+        margin: unset;
+        font-size: 1rem;
+    }
+    .collaboration-btn svg {
+        position: relative;
+        right: unset;
+        margin: unset;
+        width: 0.84rem;
+    }
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
