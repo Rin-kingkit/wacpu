@@ -18,6 +18,7 @@
 .resume-banner-style{
     background-image: url(img/resume-banner.JPG);
     background-position: right;
+    background-repeat: no-repeat;
     height: 60vh;
     margin-bottom: 13vh;
 }
@@ -48,6 +49,7 @@ main {
 .collaboration h2 {
     font-size: 1.25rem;
     text-align: center;
+    font-weight: normal;
 }
 .collaboration-btn {
     width: 100%;
@@ -111,7 +113,7 @@ main {
 
 /******************************** list ******************/
 .popup{
-    display: none;
+    /* display: none; */
 }
 .list {
     position: fixed;
@@ -139,20 +141,22 @@ main {
 }
 .list-frame {
     width: 100%;
-    height: 90%;
+    height: 100%;
     background-color: #fff;
     overflow-y: scroll;
+    border-radius: 0.12rem;
 }
 .list-bar {
     display: flex;
     width: 90%;
     margin: auto;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.8rem;
+    padding: 1.875rem 0;
 }
 .list-box {
     width: 100%;
-    height: 7.375rem;
+    /* height: 7.375rem; */
     padding: 0.9375rem;
     background-color: #FAFAFA;
     border-radius: 0.25rem;
@@ -163,6 +167,7 @@ main {
     width: 100%;
     height: 100%;
     justify-content: space-between;
+    gap: 0.875rem;
 }
 .list h6{
     font-size: 0.875rem;
@@ -174,16 +179,17 @@ main {
     font-size: 0.75rem;
     color: #606060;
     letter-spacing: 0.05rem;
-    line-height: 1rem;
+    line-height: 1.13rem;
 }
 .cross {
     width: 100%;
-    height: 10%;
+    height: 9%;
     display: flex;
 }
 .cross svg {
     margin: auto;
     cursor: pointer;
+    top: 5%;
 }
 
 
@@ -262,9 +268,76 @@ main {
         width: 0.84rem;
     }
 
+    /************************* list *******************/
+    .type{
+        display: flex;
+        color: #fff;
+        height: 10%;
+        align-items: center;
+        justify-content: space-around;
+        width: 92%;
+        margin: auto;
+    }
+    .list-frame {
+        width: 94%;
+        margin: auto;
+    }
+    .list-content {
+        flex-direction: row;
+        align-items: center;
+    }
+    .list h6 {
+        width: 50%;
+        font-size: 0.9rem;
+    }
+    .list p {
+        line-height: 1.6rem;
+        width: 50%;
+        font-size: 0.9rem;
+    }
+    .list-bar {
+        width: 96%;
+    }
+    .cross {
+        height: 11%;
+    }
+    .cross svg {
+        top: 0;
+    }
+
+
+
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .photo-container {
+        grid-template-columns: repeat(3,1fr);
+        width: min(85%,1640px);
+        grid-column-gap: 2%;
+    }
+    .collaboration-btn {
+        width: 12.5rem;
+        padding: 0 1.4rem 0 1.4rem;
+        justify-content: space-between;
+    }
+    .collaboration h2 {
+        font-size: 1.4rem;
+    }
+    .collaboration-btn p {
+        font-size: 1.12rem;
+    }
+    .list-box {
+        padding: 0.9375rem 2rem;
+    }
+    .list-content {
+        gap: 7%;
+    }
+    .list p {
+        font-size: 1rem;
+    }
+    .list h6 {
+        font-size: 1rem;
+    }
 
 }
