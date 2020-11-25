@@ -30,7 +30,9 @@ body{
 ol, ul {
   list-style: none;
 }
-
+a{
+  color: var(--word-color);
+}
 
 :root{
   --word-color:#2F2F2F;
@@ -69,7 +71,7 @@ header{
   height: 66px;
   box-shadow: 0 3px 5px #0000000f;
   display: flex;
-  background-color: var(--logo-green-light);
+  background-color: var(--logo-green-middle);
 }
 .header-container {
   display: flex;
@@ -83,7 +85,21 @@ header{
   padding: 0 6% 0 8%;
 }
 #logo {
-  width: 8rem;
+  width: 130px;
+}
+.hamburger{
+  display: flex;
+  width: min(7%,40px);
+}
+.hamburger img {
+  width: 100%;
+  margin: auto;
+}
+.nav-bar{
+  display: none;
+}
+.home-link {
+  color: var(--logo-green);
 }
 .container{
   /* width: 100%; */
@@ -101,7 +117,7 @@ flex-direction: column;
     width: 100%;
     height: 21.125rem;
     background-color: #000;
-    margin: 30px auto 60px auto;
+    margin: 30px auto 30px auto;
 }
 .banner-style{
   background-image: url(img/banner.jpg);
@@ -109,9 +125,12 @@ flex-direction: column;
   background-position-x: center;
   border-radius: 0.94rem;
 }
+.intro-block img{
+  display: none;
+}
 .intro{
   font-size: 1rem;
-  margin: 0 5px;
+  margin: 30px 5px;
 }
 .intro-style{
   line-height: 1.75rem;
@@ -131,7 +150,7 @@ flex-direction: column;
   width: 7%;
   }
 .gap {
-    background-color: var(--logo-green-light);
+    background-color: var(--logo-green-middle);
     width: 100%;
     height: 3.625rem;
 }
@@ -275,8 +294,8 @@ background-position: bottom;
 }
 /********************** teacher ***********************/
 .teacher {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background: radial-gradient(circle at center,#63616A 10%,#4E4D52 90%);
 }
 .teacher .subject>h2{
@@ -492,6 +511,7 @@ footer {
   z-index: -1;
   height: auto;
   width: 50%;
+  opacity: 0.6;
 }
 circle {
   width: 100%;
@@ -509,7 +529,7 @@ circle {
 }
 .about03 .decoration-circle {
   right: -25%;
-  top: 20%;
+  top: 13%;
   width: 60%;
 }
 
@@ -526,6 +546,12 @@ circle {
   h3 {
     font-size: 1.5rem;
   }
+  header {
+    height: 70px;
+  }
+  .header-container {
+    height: 46px;
+  }
  }
 
  /* Medium devices (tablets, 768px and up) */
@@ -535,6 +561,13 @@ circle {
   }
   .word-small{
     font-size: 0.8rem;
+  }
+  header {
+    height: 80px;
+  }
+  .header-container {
+    height: 50px;
+    padding: 0 4% 0 5%;
   }
   .intro {
     font-size: 0.83rem;
@@ -555,7 +588,7 @@ circle {
   }
   .about-pic {
     height: 17rem;
-    box-shadow: 0.28rem 0.28rem 0 var(--logo-green);
+    /* box-shadow: 0.28rem 0.28rem 0 var(--logo-green); */
   }
   .container {
     width: min(88%);
@@ -584,16 +617,64 @@ circle {
     font-size: 0.94rem;
   }
   header {
-    height: 80px;
+    height: 3rem;
   }
+  
+  header > .container {
+    width: 92%;
+  }
+  .header-container {
+    height: 4rem;
+    border-radius: 2rem;
+    top: 1rem;
+    z-index: 2;
+    box-shadow: 0 0.12rem 0.4rem #0000001a;
+    padding: 0 4.4%;
+  }
+  #logo {
+    width: 11rem;
+  }
+  .hamburger{
+    display: none;
+  }
+  .nav-bar{
+    display: flex;
+    width: 24%;
+    justify-content: space-between;
+  }
+
   .container {
     width: min(86%,1640px);
   }
   .banner-block {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 3rem);
   }
   .banner {
-    height: 77.5vh;
+    margin: auto;
+    height: 84vh;
+  }
+  .banner-style {
+    border-radius: 0 0 0 0.94rem;
+  }
+  .intro-block{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    width: 44%;
+    height: 35%;
+    bottom: 0%;
+    right: -8%;
+    padding: 3%;
+  }
+  .intro-block img{
+    display: block;
+    margin: auto;
+    width: 38%;
+    margin-bottom: 5%;
+  }
+  .intro {
+    margin: auto;
+    font-size: 0.8rem;
   }
   .about {  
     padding-top: 6rem;
@@ -663,8 +744,8 @@ circle {
     font-size: 2rem;
   }
   .teacher{
-    padding-top: 8rem;
-    padding-bottom: 3.5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
   }
   .teacher .subject > p {
     width: 44rem;
@@ -760,6 +841,23 @@ circle {
     height: 18rem;
   }
 
+  /******************* decoration ******************/
+  .about01 .decoration-circle {
+    right: 37%;
+    top: 5%;
+    width: 49%;
+  }
+  .about02 .decoration-circle {
+      left: 83%;
+      top: 42%;
+      width: 32%;
+  }
+  .about03 .decoration-circle {
+    right: 68%;
+  }
+
+
+
 
 
 }
@@ -787,6 +885,10 @@ circle {
   }
   .about-content > .underline::after {
     top: -0.5rem;
+  }
+  .about01 .decoration-circle {
+    right: 42%;
+    width: 41%;
   }
   .teacher .subject > p {
     width: 50rem;

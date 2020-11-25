@@ -35,27 +35,26 @@ var c2 = circleWidth *2
 
 
 
-
 var i = 1
-var replace = 0
+var displace = 0
 console.log(w)
 
 // 600設定為bar的全長
 
 function teacher(){
     $('.arrow-next').click(function(){
-        if(replace<barMax){            // 600設定為bar的全長
-            replace = replace+circleWidth+w*0.3
+        if(displace<barMax){            // 600設定為bar的全長
+            displace = displace+circleWidth+w*0.3
         }  
-        $('.teacher-frame').scrollLeft(replace)
-        console.log(replace)
+        $('.teacher-frame').scrollLeft(displace)
+        console.log(displace)
     })
     $('.arrow-pre').click(function(){
-        if(replace>0){
-            replace = replace-circleWidth-w*0.3
+        if(displace>0){
+            displace = displace-circleWidth-w*0.3
         }
-        $('.teacher-frame').scrollLeft(replace)
-        console.log(replace)
+        $('.teacher-frame').scrollLeft(displace)
+        console.log(displace)
     })
 }
 
@@ -94,6 +93,6 @@ teacher()
 
 
 
-// 11/25 改首頁設計
+
 // Ｘ位置改右上角
 // 項目內容縫隙修改
