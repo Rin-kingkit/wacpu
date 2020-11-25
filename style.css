@@ -290,11 +290,17 @@ background-position: bottom;
   scroll-snap-type: x mandatory;
   scrollbar-color: rgba(255, 255, 255, 0.26) transparent;
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+.teacher-frame{
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
 }
 
 .teacher-frame::-webkit-scrollbar {
   background-color: transparent;
   height: 5px;
+  display: none;
 }
 .teacher-frame::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.26);
@@ -308,13 +314,22 @@ background-position: bottom;
   position: absolute;
   padding-right: 4vw;
 }
+/* .teacher-bar{
+  width: max-content;
+
+} */
 .teacher-circle {
   width: max(60vw,14rem);
   height: max(60vw,14rem);
   background-color: #fff;
   border-radius: 50%;
   scroll-snap-align: center;
+  transition: 0.5s;
 }
+/* .teacher-circle{
+  display: inline-block;
+  margin-right: 30vw;
+} */
 .teacher-circle-style{
   border: 0.1875rem solid var(--word-color);
   box-shadow: 0.1875rem 0.125rem var(--logo-yellow);
@@ -449,6 +464,11 @@ footer {
   height: 34.625rem;
   background-size: cover;
   background-position: top center;
+}
+
+/********************** teacher effect *********************/
+.circle-small{
+  transform: scale(0.5);
 }
 
 
