@@ -19,12 +19,39 @@ h6 {
 .course-banner-style{
     background-image: url(img/course-banner.JPG);
     height: 23rem;
+    margin: 30px auto 40px auto;
 }
 .banner-block-small{
-    height: 68vh;
+    height: calc(100vh - 66px);
+}
+.course-slogan {
+    background-color: var(--logo-green-middle);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 7.2rem;
+    padding: 1.5rem 1.5rem;
+    border-radius: 0.3125rem;
+}
+.course-slogan h2{
+    color: #fff;
+    font-size: 1.4rem;
+}
+.course-slogan p{
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    letter-spacing: 0.06rem;
 }
 main{
     color: var(--word-color);
+}
+#course {
+    background-color: #fdfefc;
+    z-index: -1;
+    padding-top: 4rem;
 }
 .btn-bar {
     display: flex;
@@ -92,7 +119,7 @@ main{
     width: 100%;
     border: 0.1875rem solid var(--logo-green-middle);
     background-color: #fff;
-    border-radius: 0.1875rem;
+    border-radius: 0.3125rem;
 }
 .level1{
     display: block;
@@ -112,19 +139,35 @@ main{
     color: #fff;
     font-size: 1.75rem;
 }
+.course-intro-box {
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    padding: 7% 7%;
+}
 .course-box {
-    padding: 2.5rem 0 3.125rem 0;
+    padding: 2.5rem 0 2rem 0;
+}
+.course-container{
+    width: 90%;
+    margin: auto;
 }
 .word-color-light{
     color: var(--word-color-light);
 }
 .course-content{
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
 }
 .course-content h6 {
     width: max-content;
-    font-size: 1.25rem;
-    margin-bottom: 1.25rem;
+    font-size: 1.2rem;
+    margin: auto auto 7% auto;
+    font-weight: normal;
+}
+.title-box {
+    background-color: var(--logo-green-middle);
+    color: #fff;
+    padding: 1.6% 4%;
+    border-radius: 0.2rem;
 }
 .course-content > .underline:after{
     height: 0.3125rem;
@@ -134,11 +177,14 @@ main{
     list-style-type: square;
     /* list-style-position: inside; */
     padding-left: 3.6%;
-    line-height: 2rem;
 }
 li::marker {
     font-size: 12px;
 }
+#course li,#exam li {
+    padding: 0.3rem 0;
+}
+
 
  /************************* exam  ********************/
  .exam{
@@ -191,6 +237,7 @@ li::marker {
     font-size: 1.5rem;
     font-weight: 500;
 }
+
 .exam-content-box > h3 span {
     font-size: 0.875rem;
     font-weight: normal;
@@ -199,7 +246,7 @@ li::marker {
     color: var(--word-color-light-light);
 }
 .exam-content-container {
-    margin-top: 1.5625rem;
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -210,11 +257,20 @@ li::marker {
     height: 0.3rem;
     background-color: var(--logo-yellow-light);
 }
+.exam-content h6 {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 1.2rem;
+    margin: auto auto 7% auto;
+}
+.exam .title-box{
+    background-color: var(--logo-yellow);
+    padding: 1% 1% 1% 4%;
+}
 .exam-content > ul {
     list-style-type: square;
     /* list-style-position: inside; */
     padding-left: 3.6%;
-    line-height: 2rem;
 }
 li::marker {
     font-size: 12px;
