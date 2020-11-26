@@ -120,7 +120,8 @@ main{
 }
 .course-frame {
     width: 100%;
-    border: 0.1875rem solid var(--logo-green-middle);
+    /* border: 0.1875rem solid var(--logo-green-middle); */
+    box-shadow:0 0 0 0.1875rem var(--logo-green-middle);
     background-color: #fff;
     border-radius: 0.3125rem;
 }
@@ -208,20 +209,23 @@ li::marker {
 }
 .exam-frame {
     background-color: #fff;
-    border: 0.1875rem solid var(--logo-yellow);
+    box-shadow: 0 0 0 0.3rem var(--logo-yellow);
     border-radius: 0.1875rem;
 }
 
 .exam-pic-box {
     width: 100%;
     height: 13.25rem;
-    border: 0.0625rem solid var(--logo-yellow);
+    border-radius: 0.1875rem;
+    /* border: 0.0625rem solid var(--logo-yellow); */
 }
 .exam-pic {
     width: 100%;
     height: 100%;
+    top: -1px;
     background-size: cover;
     background-position: center center;
+    border-radius: 0.1875rem;
 }
 .student-exam .exam-pic{
     background-image: url(img/exam1.jpg);
@@ -402,7 +406,7 @@ li::marker {
         padding: 0.3% 0.6% 0.3% 2.6%;
     }
     .course-frame {
-        box-shadow: 0.2rem 0.15rem 0.01rem var(--logo-green-light);
+       box-shadow:0 0 0 0.1875rem var(--logo-green-middle) ,0.3rem 0.3rem 0.01rem var(--logo-green-light)
     }
     .btn-text {
         letter-spacing: 0.15rem;

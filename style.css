@@ -325,12 +325,14 @@ background-position: bottom;
 }
 .arrow-pre-active{
   opacity: 1;
+  cursor: pointer;
 }
 .arrow-pre-active:hover{
   transform: translateX(-5px);
 }
 .arrow-next-active{
   opacity: 1;
+  cursor: pointer;
 }
 .arrow-next-active:hover {
   transform: translateX(5px);
