@@ -49,6 +49,8 @@ console.log(barMax)
 
 $('.arrow-next').addClass('arrow-next-active')
 
+
+
 function teacher(){
     $('.arrow-next').click(function(){
         $('.arrow-pre').addClass('arrow-pre-active')
@@ -74,8 +76,8 @@ function teacher(){
         $('.teacher-frame').scrollLeft(displace)
         console.log(displace)
     })
+    
 }
-
 teacher()
 
 // $('.arrow-next').click(function(){

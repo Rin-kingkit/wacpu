@@ -99,11 +99,14 @@ header{
   display: none;
 }
 .home-link {
+  
+}
+.page-now{
   color: var(--logo-green);
 }
 .container{
   /* width: 100%; */
-  width: min(85%);
+  width: min(90%);
   margin: auto;
 }
 
@@ -556,7 +559,7 @@ circle {
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   html{
-    font-size: 22px;
+    font-size: 18px;
   }
   h3 {
     font-size: 1.5rem;
@@ -659,7 +662,7 @@ circle {
   }
 
   .container {
-    width: min(86%,1640px);
+    width: min(90%,960px);
   }
   .banner-block {
     height: calc(100vh - 3rem);
@@ -671,6 +674,7 @@ circle {
   .banner-style {
     border-radius: 0 0 0 0.94rem;
   }
+
   .intro-block{
     position: absolute;
     background-color: #fff;

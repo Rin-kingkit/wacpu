@@ -26,5 +26,6 @@ function courseLevel(){
 $('document').ready(function(){
     courseBtn()
     courseLevel()
+    
 })
 

@@ -18,11 +18,14 @@ h6 {
 
 .course-banner-style{
     background-image: url(img/course-banner.JPG);
-    height: 23rem;
-    margin: 30px auto 40px auto;
+    height: 25rem;
+    margin: unset;
+    background-position-x: right;
+    background-repeat: no-repeat;
 }
 .banner-block-small{
     height: calc(100vh - 66px);
+    justify-content: space-evenly;
 }
 .course-slogan {
     background-color: var(--logo-green-middle);
@@ -50,7 +53,7 @@ main{
 }
 #course {
     background-color: #fdfefc;
-    z-index: -1;
+    z-index: 0;
     padding-top: 4rem;
 }
 .btn-bar {
@@ -137,12 +140,13 @@ main{
     line-height: 3.75rem;
     text-align: center;
     color: #fff;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 .course-intro-box {
     background-color: #f9f9f9;
     border-radius: 0.5rem;
-    padding: 7% 7%;
+    padding: 7% 6%;
 }
 .course-box {
     padding: 2.5rem 0 2rem 0;
@@ -159,7 +163,7 @@ main{
 }
 .course-content h6 {
     width: max-content;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: auto auto 7% auto;
     font-weight: normal;
 }
@@ -260,7 +264,7 @@ li::marker {
 .exam-content h6 {
     font-weight: normal;
     line-height: normal;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: auto auto 7% auto;
 }
 .exam .title-box{
@@ -334,32 +338,68 @@ li::marker {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .banner-block-small {
-        height: 76vh;
+        height: calc(100vh - 70px);
     }
+    
     .course-banner-style {
-        height: 65vh;
+        height: 64vh;
+    }
+    .course-slogan {
+        height: 5.4rem;
+        padding: 1.1rem 1.5rem;
     }
     .btn-text {
         font-size: 0.8rem;
         letter-spacing: 0.06rem;
     }
-    .course-content h6 {
-        margin-bottom: 0.8rem;
+    .course-content h6,.exam-content h6 {
+        margin-bottom: 1.8rem;
     }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .course-banner-style {
+        height: 60vh;
+    }
+    .course-slogan {
+        height: 4rem;
+        padding: 0.8rem 1.5rem;
+        border-radius: 0.2rem;
+    }
+    .course-slogan h2 {
+        font-size: 1rem;
+    }
+    .course-slogan p {
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+    }
     .course-frame {
-        width: min(88%,980px);
         margin: auto;
     }
+    .course-box {
+        padding: 1.6rem 0 2rem 0;
+    }
+    .course-intro-box {
+        padding: 4% 7%;
+    }
+
+    .title-box {
+        padding: 0.3% 2.6%;
+        border-radius: 0.15rem;
+    }
+    #course li, #exam li {
+        padding: 0.2rem 0;
+    }
     .course-content ul {
-        line-height: 1.6rem;
+        line-height: 1.4rem;
     }
     .exam-frame {
         margin: auto;
-        width: min(88%,980px);
+        width: 100%;
+    }
+    .exam .title-box {
+        padding: 0.3% 0.6% 0.3% 2.6%;
     }
     .course-frame {
         box-shadow: 0.2rem 0.15rem 0.01rem var(--logo-green-light);
@@ -367,8 +407,11 @@ li::marker {
     .btn-text {
         letter-spacing: 0.15rem;
     }
-    .course-content h6 {
-        margin-bottom: 0.6rem;
+    .course-content h6,.exam-content h6 {
+        margin-bottom: 1.4rem;
+    }
+    .exam-content-box {
+        width: 90%;
     }
 }
 
@@ -377,18 +420,61 @@ li::marker {
     .banner-block-small {
         height: calc(100vh - 80px);
     }
-    .course-banner-style{
-        height: 85%;
-        margin: auto;
-    }
+    .course-banner-style {
+        height: 87vh;
+        margin-bottom: 10vh;
+      }
+      .banner-block-small {
+        height: unset;
+      }
+      .course-slogan {
+        height: 9rem;
+        padding: 2.4rem 1.5rem;
+        border-radius: 0.8rem;
+      }
+      .course-slogan h2 {
+        font-size: 1.64rem;
+      }
+      .course-slogan p {
+        font-size: 0.96rem;
+        letter-spacing: 0.12rem;
+      }
     main {
         padding-top: 5.52rem;
     }
+    .btn1 > .btn-text,.btn2 > .btn-text {
+        font-size: 1.2rem;
+    }
+    .btn-off:hover .btn-text-off {
+        letter-spacing: 0.1rem;
+    }
     .course-frame {
-        width: min(86%,1640px);
+    }
+    .course-container {
+        width: 86%;
+    }
+
+    .course-intro-box {
+        padding: 5% 5%;
+    }
+    .course-container p {
+        padding: 0 7%;
+        margin: 0.6rem auto;
+    }
+    .course-content h6, .exam-content h6 {
+        margin: auto auto 1.4rem 0;
+    }
+    .exam-box {
+        padding: 2.5rem 0 2.5rem 0;
+    }
+    .course-content h6 {
+        font-size: 1.2rem;
+    }
+    .title-box {
+        padding: 0.8% 2.6%;
     }
     .course-content ul {
-        line-height: 2rem;
+        line-height: 1.5rem;
     }
     #exam{
         padding-top: 7rem;
@@ -400,8 +486,7 @@ li::marker {
     .exam-block {
         flex-direction: row;
         margin: 3rem auto 0 auto;
-        width: min(94%,1640px);
-        gap: min(4%,3.2rem);
+        gap: min(3%,3.2rem);
     }
     .btn {
         border: 0.165rem solid var(--logo-green-middle);
@@ -410,8 +495,17 @@ li::marker {
         font-size: 0.95rem;
         max-width: unset;
     }
+    .exam-content-box {
+        width: 92%;
+    }
+    .exam-content-container {
+        margin-top: 1.7rem;
+    }
     .exam-content-box > h3 {
         height: 3.4rem;
+    }
+    .exam-content h6 {
+        margin: auto auto 0.5rem 0;
     }
     .exam-content > ul {
         margin-top: unset;
@@ -446,12 +540,29 @@ li::marker {
     .course-frame {
         width: min(56rem,100%);
     }
+    .course-intro-box {
+        padding: 3.8% 7%;
+    }
+    .course-container p {
+        margin: 1rem auto 2rem auto;
+    }
     .exam-block {
-        width: min(92%,1640px);
-        gap: min(4%,3.2rem);
+        gap: min(3%,3.2rem);
     }
     .exam-content-box {
-        width: 80%;
+        width: 88%;
+    }
+    .course-content h6, .exam-content h6 {
+        margin: auto auto 1rem 0;
+    }
+    .exam-content h6 {
+        margin: auto auto 0.7rem 0;
+    }
+    .exam .title-box {
+        padding: 0.3% 0.6% 0.3% 4%;
+    }
+    .exam .container {
+        width: min(88%,1240px);
     }
     
 
