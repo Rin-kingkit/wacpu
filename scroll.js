@@ -37,22 +37,40 @@ var c2 = circleWidth *2
 
 var i = 1
 var displace = 0
-console.log(w)
 
-// 600設定為bar的全長
+
+var barMax2 = barMax - circleWidth / 2
+var barMin = circleWidth / 2
+
+console.log(w)
+console.log(barMax)
+
+// barMax設定為bar的全長
+
+$('.arrow-pre').addClass('text-arrow-stop')
 
 function teacher(){
     $('.arrow-next').click(function(){
-        if(displace<barMax){            // 600設定為bar的全長
+        $('.arrow-pre').removeClass('text-arrow-stop')
+        if(displace<barMax2){            // barMax設定為bar的全長
             displace = displace+circleWidth+w*0.3
-        }  
+            if(displace>barMax2){
+                $('.arrow-next').addClass('text-arrow-stop')
+            }
+        }
+        
         $('.teacher-frame').scrollLeft(displace)
         console.log(displace)
     })
     $('.arrow-pre').click(function(){
+        $('.arrow-next').removeClass('text-arrow-stop')
         if(displace>0){
             displace = displace-circleWidth-w*0.3
+            if(displace<barMin){
+                $('.arrow-pre').addClass('text-arrow-stop')
+            }
         }
+        
         $('.teacher-frame').scrollLeft(displace)
         console.log(displace)
     })

@@ -318,6 +318,9 @@ background-position: bottom;
 .teacher-arrow img{
   width: 100%;
 }
+.text-arrow-stop{
+  opacity: 0.5;
+}
 .teacher-frame {
   overflow-x: scroll;
   width: max(70vw,15rem);
@@ -868,7 +871,7 @@ circle {
     font-size: ;
   }
   .container {
-    width: min(85%,1640px);
+    width: min(85%,1240px);
   }
   .about-block {
     gap: 10%;  
