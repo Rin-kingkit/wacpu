@@ -47,15 +47,15 @@ console.log(barMax)
 
 // barMax設定為bar的全長
 
-$('.arrow-pre').addClass('text-arrow-stop')
+$('.arrow-next').addClass('arrow-next-active')
 
 function teacher(){
     $('.arrow-next').click(function(){
-        $('.arrow-pre').removeClass('text-arrow-stop')
+        $('.arrow-pre').addClass('arrow-pre-active')
         if(displace<barMax2){            // barMax設定為bar的全長
             displace = displace+circleWidth+w*0.3
             if(displace>barMax2){
-                $('.arrow-next').addClass('text-arrow-stop')
+                $('.arrow-next').removeClass('arrow-next-active')
             }
         }
         
@@ -63,11 +63,11 @@ function teacher(){
         console.log(displace)
     })
     $('.arrow-pre').click(function(){
-        $('.arrow-next').removeClass('text-arrow-stop')
+        $('.arrow-next').addClass('arrow-next-active')
         if(displace>0){
             displace = displace-circleWidth-w*0.3
             if(displace<barMin){
-                $('.arrow-pre').addClass('text-arrow-stop')
+                $('.arrow-pre').removeClass('arrow-pre-active')
             }
         }
         

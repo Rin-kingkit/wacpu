@@ -307,20 +307,32 @@ background-position: bottom;
 .teacher-content {
   margin-top: 2rem;
   height: 70vw;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .teacher-arrow{
   width: 5%;
+  transition: 0.1s ease-out;
+  opacity: 0.5;
 }
 .teacher-arrow img{
   width: 100%;
 }
-.text-arrow-stop{
-  opacity: 0.5;
+.arrow-pre-active{
+  opacity: 1;
 }
+.arrow-pre-active:hover{
+  transform: translateX(-5px);
+}
+.arrow-next-active{
+  opacity: 1;
+}
+.arrow-next-active:hover {
+  transform: translateX(5px);
+}
+
 .teacher-frame {
   overflow-x: scroll;
   width: max(70vw,15rem);
