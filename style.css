@@ -95,14 +95,34 @@ header{
   width: 100%;
   margin: auto;
 }
+.nav {
+  font-size: 1.05rem;
+}
 .nav-bar{
   display: none;
 }
 .home-link {
   
 }
+.nav:hover a{
+  animation: nav 0.3s ease-out;
+}
+@keyframes nav{
+  0{
+    top:0;
+  }
+  50%{
+    top: -5px;
+  }
+  100%{
+    top:0px;
+  }
+}
 .page-now{
   color: var(--logo-green);
+}
+a.page-now{
+  animation: nav none;
 }
 .container{
   /* width: 100%; */
@@ -673,7 +693,7 @@ circle {
   }
   
   header > .container {
-    width: 92%;
+    width: 94%;
   }
   .header-container {
     height: 4rem;
@@ -681,7 +701,7 @@ circle {
     top: 1rem;
     z-index: 2;
     box-shadow: 0 0.12rem 0.4rem #0000001a;
-    padding: 0 4.4%;
+    padding: 0 min(6.4%,65px);
   }
   #logo {
     width: 11rem;
@@ -947,6 +967,10 @@ circle {
   .about01 .decoration-circle {
     right: 42%;
     width: 41%;
+  }
+  .teacher{
+    padding-top: 4.5rem;
+    padding-bottom: 0.5rem;
   }
   .teacher .subject > p {
     width: 50rem;
