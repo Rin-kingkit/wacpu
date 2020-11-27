@@ -1,11 +1,11 @@
 function list(){
     $('.collaboration-btn').click(function(){
-        $('.list').addClass('popup')
-        $('body').addClass('back-fixed')
+        $('.list').fadeIn()
+        $('html,body').addClass('back-fixed')
     })
     $('.cross').click(function(){
-        $('.list').removeClass('popup')
-        $('body').removeClass('back-fixed')
+        $('.list').fadeOut()
+        $('html,body').removeClass('back-fixed')
     })
 }
 
