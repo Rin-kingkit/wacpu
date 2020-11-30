@@ -8,6 +8,7 @@
     height: min-content;
     padding: 8% 5%;
     min-height: 120px;
+    
 }
 .course-slogan h2{
     color: #fff;
@@ -49,7 +50,9 @@
       .course-slogan {
         padding: 2.6rem 1.5rem;
         /* border-radius: 0.8rem; */
-      }
+        display: none;
+    }
+
       .course-slogan h2 {
         font-size: 1.64rem;
       }

@@ -1,0 +1,48 @@
+.co-list {
+    position: unset;
+    width: unset;
+    height: unset;
+    top: unset;
+    left: unset;
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+.co-list  .list-block-style {
+        background-color: transparent;
+        border: unset;
+        border: unset;
+}
+.co-list .type {
+    color: #000;
+}
+.co-list .list-frame {
+    height: unset;
+    overflow-y: visible;
+    overflow-y: hidden;
+    height: 500px;
+    margin-bottom: 2rem;
+}
+.co-list .list-block {
+    height: unset;
+    margin-top: 0;
+}
+.co-list  .list-bar {
+    padding: 0;
+}
+.collaboration-container {
+    flex-direction: column;
+    padding: 0;
+}
+.collaboration-block {
+    height: unset;
+    padding: 2rem 0;
+}
+.collaboration-container {
+    height: unset;
+}
+.collaboration-block {
+    height: unset
+ }
+    
