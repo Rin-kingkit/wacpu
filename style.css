@@ -78,7 +78,7 @@ header{
   display: flex;
   background-color: #fff;
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   height: 42px;
   margin: auto;
   align-items: center;
@@ -130,7 +130,7 @@ header{
   position: absolute;
   z-index: 3;
   background-color: var(--logo-green);
-  padding: 35vh 15vw;
+  padding: 30vh 15vw 35vh 15vw;
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -143,16 +143,30 @@ header{
 }
 .navi .nav{
   display: none;
+  width: 100%;
 }
 .navi .nav a {
   font-size: 1.5rem;
   color: #fff;
-  width: max-content;
-  }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .navi a.page-now {
     color: var(--logo-yellow-light);
 }
-
+.navi svg {
+  width: 9px;
+}
+.fb-link {
+  width: 30px;
+  align-self: center;
+  top: 25vh;
+}
+.fb-link img {
+  width: 100%;
+}
 .back-fixed{
     overflow: hidden;
 }
@@ -661,6 +675,9 @@ circle {
     height: 50px;
     padding: 0 3% 0 5%;
   }
+  .navi {
+    padding: 30vh 20vw 35vh 20vw;
+  }
   .banner {
     height: 72vh;
   }
@@ -753,7 +770,7 @@ circle {
   }
   .nav-bar{
     display: flex;
-    width: 28%;
+    width: max(28%,300px);
     justify-content: space-between;
   }
 
@@ -931,7 +948,7 @@ circle {
   .contact-link-box {
     margin: auto;
     height: 100%;
-    margin-left: 2rem;
+    margin-left: 4rem;
     width: unset;
   }
   .contact-link {
@@ -1026,6 +1043,6 @@ circle {
     margin-left: 3rem;
   }
   .contact-link-box{
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
 }

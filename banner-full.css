@@ -1,0 +1,98 @@
+/********** header ************/
+header {
+    height: 0;
+}
+.header-container {
+    top: 2vh;
+}
+
+/********** banner ************/
+.banner {
+    width: 100%;
+    height: calc(100vh - 66px);
+    height: 100vh;
+    border-radius: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 565px;
+}
+.home-banner{
+    background-image: url(img/banner.jpg);
+}
+.course-banner{
+    background-image: url(img/course-banner.JPG);
+}
+.resume-banner{
+    background-image: url(img/resume-banner.JPG);
+}
+.banner-slogan {
+    margin-top: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-shadow: 0 0 6px #0000009e;
+    margin-top: max(77vh,430px);
+    padding: 5vh 0;
+}
+.banner-slogan h1,.banner-slogan p  {
+    color: #fff;
+
+}
+.banner-slogan h1 {
+    font-size: 1.875rem;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+.banner-slogan p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-top: 0.6rem;
+}
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+    
+    .banner-slogan p {
+        font-size: 0.7rem;
+        margin-top: 0.2rem;
+        letter-spacing: 2px;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    header {
+        height: 2rem;
+    }
+    .header-container {
+        border-radius: 0.6rem;
+        top: 2vh;
+    }
+    .banner {
+        height: 98vh;
+    }
+    .banner-slogan {
+        text-align: right;
+    }
+    .banner-slogan p {
+        font-size: 1rem;
+    }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .banner-slogan p {
+        margin-top: 0.6rem;
+    }
+ }

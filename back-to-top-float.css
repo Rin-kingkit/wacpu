@@ -55,7 +55,7 @@
 @media (min-width: 992px) { 
     .back-to-top-float-box {
         opacity: 1;
-        right: 5vw;
+        right: 3vw;
         bottom: 6vh;
     }
 }
