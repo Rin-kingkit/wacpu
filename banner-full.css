@@ -29,11 +29,10 @@ header {
 }
 .banner-slogan {
     margin-top: 75vh;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-shadow: 0 0 6px #0000009e;
+    text-shadow: 0 0 11px #000000e6;
     margin-top: max(77vh,430px);
     padding: 5vh 0;
 }
@@ -45,6 +44,7 @@ header {
     font-size: 1.875rem;
     font-weight: normal;
     letter-spacing: -1px;
+    font-weight: bold;
 }
 .banner-slogan p {
     font-size: 1rem;
@@ -92,8 +92,12 @@ header {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-
+    .banner-slogan h1 {
+        font-size: 2rem;
+        
+    }
     .banner-slogan p {
         margin-top: 0.6rem;
     }
+    
  }
