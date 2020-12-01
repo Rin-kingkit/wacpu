@@ -25,6 +25,7 @@ header {
 }
 .resume-banner{
     background-image: url(img/resume-banner.JPG);
+    background-position: right;
 }
 .banner-slogan {
     margin-top: 75vh;

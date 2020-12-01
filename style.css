@@ -101,6 +101,7 @@ header{
 }
 .nav {
   font-size: 1.15rem;
+  padding: 5px 0;
 }
 .nav-bar{
   display: none;
@@ -120,9 +121,15 @@ header{
 .page-now{
   color: var(--logo-green);
 }
+.nav-hover a{
+  top:0;
+  transition: 0.3s;
+}
 .nav-hover:hover a{
   top: -4px;
-  transition-duration: top 2s;
+}
+.nav-hover:hover a.page-now{
+  top: 0;
 }
 .navi{
   width: 100vw;
@@ -256,6 +263,7 @@ header{
 
 .underline{
   z-index: 2;
+  /* transition: 0.5s; */
 }
 .underline::after {
   content: "";
@@ -268,6 +276,7 @@ header{
   background-color: var(--logo-green-light);
   z-index: -1;
   border-radius: 0.125rem;
+  transition: 0.5s;
 }
 .about-content>.underline::after{
   background-color:var(--logo-yellow-light);
@@ -878,6 +887,9 @@ circle {
   h3 {
     font-size: 2rem;
   }
+
+
+
   .teacher{
     padding-top: 4rem;
     padding-bottom: 1rem;
@@ -993,8 +1005,17 @@ circle {
     right: 68%;
     opacity: 0.7;
   }
+ /******************* effect ******************/
+ .home-effect:after{
+   width: 0%;
+ }
+ .home-effect-on{
 
-
+ }
+ .home-effect-on:after{
+   width: 104%;
+   transition: 0.8s;
+ }
 
 
 
