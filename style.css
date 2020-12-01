@@ -317,13 +317,13 @@ header{
   /* box-shadow: 0.31rem 0.31rem 0 var(--logo-green); */
   }
   .about01-pic{
-    background-image: url(img/about01.jpg);
+    background-image: url(img/small-size/about01.jpg);
   }
   .about02-pic{
-    background-image: url(img/about02.jpeg);
+    background-image: url(img/small-size/about02.jpg);
   }
   .about03-pic{
-    background-image: url(img/about03.jpeg);
+    background-image: url(img/small-size/about03.jpg);
   }
 .about-content {
     display: grid;
