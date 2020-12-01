@@ -14,7 +14,7 @@ function list(){
 
 $(document).ready(function(){
     console.log('123')
-    list()
+    // list()
 
 
 

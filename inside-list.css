@@ -8,6 +8,7 @@
     background-color: transparent;
     width: 100%;
     height: 100%;
+    margin-top: 1rem;
 }
 .co-list  .list-block-style {
         background-color: transparent;
@@ -15,13 +16,13 @@
         border: unset;
 }
 .co-list .type {
-    color: #000;
+    color: var(--logo-green-middle);
 }
 .co-list .list-frame {
     height: unset;
     overflow-y: visible;
     overflow-y: hidden;
-    height: 500px;
+    height: 390px;
     margin-bottom: 2rem;
 }
 .co-list .list-block {
@@ -46,3 +47,52 @@
     height: unset
  }
     
+ .inside-list-btn{
+    width: 75%;
+ }
+
+ .inside-list-close{
+
+ }
+ .inside-list-close svg{
+    
+}
+
+
+
+@media (min-width: 992px) {
+    .co-list {
+        margin-top: 0;
+    }
+    .co-list .list-frame {
+        height: 340px;
+        margin-bottom: 1.8rem;
+    }
+    .type {
+        width: 100%;
+        margin: 0.6rem auto 1.8rem 0;
+    }
+    .list h6 {
+        width: 44%;
+    }
+    .list p {
+        width: 48%;
+    }
+    .list-content {
+        gap: 1.2rem;
+    }
+    .list-box {
+        padding: 0.9375rem 1.1rem 0.9375rem 1.5rem;
+    }
+}
+@media (min-width: 1200px) {
+    .list-box {
+        padding: 0.9375rem 1.3rem 0.9375rem 2.5rem;
+    }
+    .collaboration-btn {
+        padding: 0px 2% 0 4%;
+    }
+    .collaboration-btn {
+        max-width: 12.4rem;
+    }
+}

@@ -105,17 +105,7 @@ header{
 .nav-bar{
   display: none;
 }
-.home-link {
-  
-}
-/* .nav:hover a{
-  animation: nav 0.5s ease-out;
-  transition-delay: 0.2s;
-} */
-.nav:hover a{
-  animation: nav 0.4s ease-in;
-  transition-delay: 0.1s;
-}
+
 @keyframes nav{
   0{
     top:0;
@@ -130,8 +120,9 @@ header{
 .page-now{
   color: var(--logo-green);
 }
-a.page-now{
-  animation: nav none;
+.nav-hover:hover a{
+  top: -4px;
+  transition-duration: top 2s;
 }
 .navi{
   width: 100vw;
@@ -495,9 +486,10 @@ background-position: bottom;
 }
 .contact-block {
     width: 100%;
-    height: 22.5rem;
+    /* height: 22.5rem; */
     display: flex;
     min-width: 19.0625rem;
+    padding: 2.5rem 0;
 }
 .green-block-style {
   background-color: var(--logo-green-middle);
@@ -709,7 +701,7 @@ circle {
     width: min(88%);
   }
   .contact-block {
-    height: 20.5rem;
+    /* height: 20.5rem; */
   }  
   .contact-link-box {
     align-items: baseline;
@@ -916,7 +908,7 @@ circle {
        padding: 3.8rem 0;
      }
      .contact-block {
-      height: 9.8rem;
+      padding: 1.8rem 0;
     }
     .green-block-style {
       border-radius: 0.4rem;

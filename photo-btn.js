@@ -3,11 +3,16 @@
 var listBarHeight = $('.list-bar').height()
 var listFrameHeight = photoContainerHeight + 45
 
-$('.inside-list-btn').click(function(){
-    $('.co-list .list-frame').animate({height:listFrameHeight},800)
+$('.inside-list-open').click(function(){
+    $('.co-list .list-frame').animate({height:listBarHeight},800)
     $('.collaboration-btn').fadeOut()
+    // $('.collaboration-btn').addClass('collaboration-btn')
     console.log(listBarHeight)
 })
+// $('.collaboration-btn').click(function(){
+//     $('.co-list .list-frame').animate({height:'390'},800)
+//     $('.collaboration-btn').removeClass('collaboration-btn')
+// })
 
 
 

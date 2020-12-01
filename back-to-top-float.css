@@ -62,8 +62,12 @@
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    .back-to-top-float-box {
+        right: 2vw;
+        bottom: 4vh;
+    }
     .back-to-top-float {
-        width: 5vw;
-        height: 5vw;
+        width: min(60px,4vw);
+        height: min(60px,4vw);
     }
 }

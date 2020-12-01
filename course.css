@@ -128,9 +128,13 @@ main{
     font-weight: normal;
 }
 .course-intro-box {
-    background-color: #eee;
+    background-color: #f4f4f4;
     border-radius: 0.5rem;
-    padding: 7% 6%;
+    padding: 5% 6%;
+    border: 3px solid var(--logo-green-middle);
+}
+.exam .course-intro-box {
+    border: 2px solid var(--logo-yellow);
 }
 .course-box {
     padding: 2.5rem 0 2rem 0;
@@ -271,8 +275,9 @@ li::marker {
     padding: 2.5rem 0;
 }
 .how-block {
-    height: 12rem;
+    /* height: 12rem; */
     display: flex;
+    padding: 2.5rem 0;
 }
 .how-content {
     margin: auto;
@@ -300,7 +305,18 @@ li::marker {
     font-size: 0.94rem;
     letter-spacing: 0.05rem;
     line-height: 1.3125rem;
-
+}
+/* // how // */
+.how .contact-link {
+    margin: unset;
+    width: unset;
+}
+.how .contact-link p {
+    margin: auto;
+    line-height: 1.4rem;
+}
+.how .contact-link-box {
+    margin-top: 1.25rem;
 }
 
 
@@ -339,6 +355,7 @@ li::marker {
     }
     .course-content h6,.exam-content h6 {
         margin-bottom: 1.8rem;
+        
     }
     #contact {
         padding: 3.5rem 0;
@@ -391,6 +408,9 @@ li::marker {
     }
     .exam-content-box {
         width: 90%;
+    }
+    .how .contact-link-box {
+        align-items: unset;
     }
 }
 
@@ -514,6 +534,16 @@ li::marker {
         margin-top: unset;
         line-height: 1.6rem;
     }
+
+    .how .contact-link-box {
+        margin: auto auto auto 10%;
+        height: unset;
+    }
+    .how .contact-link p {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
     #how {
         padding: 3.8rem 0;
     }
@@ -521,8 +551,18 @@ li::marker {
         align-items: center;
         height: 10rem;
     }
+    .how-content {
+        width: 83%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
     .how-content h2 {
         margin: unset;
+    }
+    .how-content p{
+        line-height: 1.5rem;
+        text-align: left;
     }
     .back-to-top-pc{
         display: flex;
@@ -569,7 +609,7 @@ li::marker {
         width: 88%;
     }
     .course-content h6, .exam-content h6 {
-        margin: auto auto 1rem 0;
+        margin: auto auto 1.2rem 0;
     }
     .exam-content h6 {
         margin: auto auto 0.7rem 0;
