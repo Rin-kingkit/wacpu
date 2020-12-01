@@ -363,6 +363,9 @@ li::marker {
     #how {
         padding: 3.5rem 0;
     }
+    .how .contact-link p {
+        font-size: 1rem;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -412,6 +415,7 @@ li::marker {
     .how .contact-link-box {
         align-items: unset;
     }
+    
 }
 
 /* // Large devices (desktops, 992px and up) */
