@@ -82,8 +82,8 @@ header{
   margin: auto;
   align-items: center;
   justify-content: space-between;
-  padding: 0 6% 0 8%;
   height: 45px;
+  padding: 0 3% 0 7%;
 }
 #logo {
   width: 130px;
@@ -654,8 +654,8 @@ circle {
     height: 70px;
   }
   .header-container {
-    height: 46px;
-    padding: 0 3% 0 5%;
+    height: 50px;
+    padding: 0 4% 0 5%;
   }
   .about {
     padding-bottom: 4.5rem;

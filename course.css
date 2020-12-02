@@ -317,7 +317,7 @@ li::marker {
 .how .contact-link p {
     margin: auto;
     line-height: 1.4rem;
-    width: 80%;
+    width: max(80%,275px);
     white-space: unset;
 }
 .how .contact-link-box {
