@@ -21,11 +21,11 @@ header {
     background-image: url(img/banner.jpg);
 }
 .course-banner{
-    background-image: url(img/course-banner.JPG);
+    background-image: url(img/small-size/course-banner.png);
     background-position: right;
 }
 .resume-banner{
-    background-image: url(img/resume-banner.JPG);
+    background-image: url(img/small-size/resume-banner.png);
     background-position: right;
 }
 .banner>.container {
@@ -91,7 +91,7 @@ header {
         height: 0;
     }
     .header-container {
-        border-radius: 0.6rem;
+        border-radius: 10px;
         top: 3vh;
     }
     header > .container {
