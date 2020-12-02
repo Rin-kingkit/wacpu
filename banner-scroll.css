@@ -1,0 +1,59 @@
+.scroll {
+    height: max(22vh,140px);
+    width: 3.4%;
+    background-color: var(--logo-green-light);
+    position: absolute;
+    top: 85vh;
+    padding-top: 3vh;
+    top: max(82vh,470px);
+    z-index: 2;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    display: none;
+
+}
+.scroll-bar {
+    margin: auto;
+    /* height: 3.5rem; */
+    height: 52%;
+    border: 1px solid #fff;
+    color: #fff;
+    opacity: 0.8;
+}
+.scroll-ball{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: auto;
+    top: 0%;
+    opacity: 0;
+    animation: scrollBall 4s ease-out infinite;
+    
+}
+@keyframes scrollBall{
+    0{
+        top: 0%;
+        opacity: 0;
+    }
+    60%{
+        top: 0%;
+        opacity: 0;
+    }
+    65%{
+        opacity: 0.9;
+    }
+    95%{
+        opacity: 0.9;
+    }
+    100%{
+        top: 54%;
+        opacity: 0;
+    }
+}
+
+@media (min-width: 992px) { 
+    .scroll{
+        display: block;
+    }
+}

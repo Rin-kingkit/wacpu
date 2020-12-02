@@ -22,6 +22,7 @@ header {
 }
 .course-banner{
     background-image: url(img/course-banner.JPG);
+    background-position: right;
 }
 .resume-banner{
     background-image: url(img/resume-banner.JPG);
@@ -33,14 +34,11 @@ header {
 .banner-slogan {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-shadow: 0 0 11px #000000e6;
-    background-color: #0611128f;
     width: 100vw;
-    padding: 5vh 0;
-    min-height: 120px;
-    margin-top: max(78vh,445px);
-    height: 22vh;
+    margin-top: max(74vh,379px);
+    text-align: center;
+
 }
 .banner-slogan h1,.banner-slogan p  {
     color: #fff;
@@ -48,32 +46,41 @@ header {
 }
 .banner-slogan h1 {
     font-weight: normal;
-    letter-spacing: -1px;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 .banner-slogan p {
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.3rem;
-    margin-top: 0.6rem;
-    letter-spacing: 1px;
+    margin-top: 1rem;
+    letter-spacing: 2px;
 }
 
 
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-
+    .banner-slogan {
+        margin-top: max(74vh,379px);
+    }
+    .banner-slogan h1 {
+        font-size: 2.2rem;
+    }
+    .banner-slogan p {
+        font-size: 1rem;
+    }
  }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    
+    .banner-slogan h1 {
+        font-size: 1.8rem;
+    }
     
     .banner-slogan p {
         font-size: 0.7rem;
         margin-top: 0.5rem;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
     }
  }
 
@@ -88,7 +95,7 @@ header {
         top: 3vh;
     }
     header > .container {
-        /* width: unset; */
+        width: min(90%,960px);
     }
     .banner {
         /* height: 98vh; */
@@ -99,36 +106,40 @@ header {
     }
     .banner-slogan {
         text-align: right;
-        margin-top: 77vh;
+        margin-top: max(77vh,436px);
         height: 20vh;
         border-radius: 5px;
         width: unset;
         float: right;
-        padding-right: 4%;
-        padding-left: 6%;
-        
     }
     .banner-slogan > .container {
         width: unset;
         margin: unset;
     }
+    .banner-slogan h1 {
+        font-size: 2.8rem;
+    }
     .banner-slogan p {
         font-size: 1rem;
-        margin-top: 1rem;
+        margin-top: 0.6rem;
     }
  }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    header > .container {
+        width: min(85%,1240px);
+    }
     .banner > .container {
         width: min(85%,1240px);
     }
     .banner-slogan h1 {
-        font-size: 2rem;
+        font-size: 2.4rem;
         
     }
     .banner-slogan p {
         margin-top: 0.8rem;
+        font-size: 1.2rem;
     }
     
  }
