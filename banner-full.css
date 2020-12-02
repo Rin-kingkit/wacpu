@@ -3,7 +3,7 @@ header {
     height: 0;
 }
 .header-container {
-    top: 2vh;
+    top: 3vh;
 }
 
 /********** banner ************/
@@ -27,29 +27,36 @@ header {
     background-image: url(img/resume-banner.JPG);
     background-position: right;
 }
+.banner>.container {
+    width: unset;
+}
 .banner-slogan {
-    margin-top: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-shadow: 0 0 11px #000000e6;
-    margin-top: max(77vh,430px);
+    background-color: #0611128f;
+    width: 100vw;
     padding: 5vh 0;
+    min-height: 120px;
+    margin-top: max(78vh,445px);
+    height: 22vh;
 }
 .banner-slogan h1,.banner-slogan p  {
     color: #fff;
 
 }
 .banner-slogan h1 {
-    font-size: 1.875rem;
     font-weight: normal;
     letter-spacing: -1px;
     font-weight: bold;
+    font-size: 1.6rem;
 }
 .banner-slogan p {
     font-size: 1rem;
     line-height: 1.3rem;
     margin-top: 0.6rem;
+    letter-spacing: 1px;
 }
 
 
@@ -65,7 +72,7 @@ header {
     
     .banner-slogan p {
         font-size: 0.7rem;
-        margin-top: 0.2rem;
+        margin-top: 0.5rem;
         letter-spacing: 2px;
     }
  }
@@ -73,31 +80,55 @@ header {
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     header {
-        height: 2rem;
+        /* height: 2rem; */
+        height: 0;
     }
     .header-container {
         border-radius: 0.6rem;
-        top: 2vh;
+        top: 3vh;
+    }
+    header > .container {
+        /* width: unset; */
     }
     .banner {
-        height: 98vh;
+        /* height: 98vh; */
+        height: 100vh;
+    }
+    .banner > .container {
+        width: min(90%,960px);
     }
     .banner-slogan {
         text-align: right;
+        margin-top: 77vh;
+        height: 20vh;
+        border-radius: 5px;
+        width: unset;
+        float: right;
+        padding-right: 4%;
+        padding-left: 6%;
+        
+    }
+    .banner-slogan > .container {
+        width: unset;
+        margin: unset;
     }
     .banner-slogan p {
         font-size: 1rem;
+        margin-top: 1rem;
     }
  }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    .banner > .container {
+        width: min(85%,1240px);
+    }
     .banner-slogan h1 {
         font-size: 2rem;
         
     }
     .banner-slogan p {
-        margin-top: 0.6rem;
+        margin-top: 0.8rem;
     }
     
  }

@@ -29,7 +29,7 @@ footer .w-20 {
     width: 20%;
     margin: auto;
 }
-footer div:after, div:before {
+footer div:after,footer div:before {
     position: absolute;
     content: '';
 }
