@@ -106,7 +106,7 @@ header {
     }
     .banner-slogan {
         text-align: right;
-        margin-top: max(77vh,436px);
+        margin-top: max(81vh,436px);
         height: 20vh;
         border-radius: 5px;
         width: unset;
