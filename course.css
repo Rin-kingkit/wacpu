@@ -546,7 +546,7 @@ li::marker {
     }
 
     .how .contact-link-box {
-        margin: auto auto auto 10%;
+        margin: auto auto auto 5%;
         height: unset;
     }
     .how .contact-link p {
