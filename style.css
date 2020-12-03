@@ -107,7 +107,7 @@ header{
 }
 .nav img {
   width: 24px;
-  top: 1px;
+  /* top: 1px; */
 }
 
 @keyframes nav{
@@ -758,7 +758,7 @@ circle {
   }
   .header-container {
     height: 50px;
-    padding: 0 3% 0 5%;
+    padding: 0 3% 0 3%;
   }
   .navi {
     padding: 30vh 20vw 35vh 20vw;

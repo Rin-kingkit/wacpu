@@ -68,11 +68,12 @@ main {
 .collaboration-btn p {
     color: #fff;
     margin: auto;
+    font-size: 1.2rem;
 }
 .collaboration-btn svg {
     width: 0.9375rem;
     position: absolute;
-    right: 1.75rem;
+    right: 1.1rem;
     margin: auto;
     transition: 0.3s;
 }
@@ -88,7 +89,7 @@ main {
 .photo {
     width: 100%;
     background-color: #4E4D52;
-    padding: 6.25rem 0 6.25rem 0;
+    padding: 4rem 0 4rem 0;
 }
 .photo h2 {
     color: #fff;
@@ -246,6 +247,8 @@ main {
         max-width: 21rem;
         height: 2.7rem;
     }
+
+    
     .resume-banner-style {
 
     }
@@ -260,6 +263,12 @@ main {
     }
     .cross {
         padding: 2% 2% 2% 0;
+    }
+    .list h6 {
+        font-size: 0.94rem;
+    }
+    .list p {
+        font-size: 0.8rem;
     }
 }
 
