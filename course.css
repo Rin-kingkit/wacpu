@@ -326,6 +326,7 @@ li::marker {
 
 
 
+
 .back-to-top-mobile{
     /* display: none; */
     border: 2px solid var(--logo-green);
@@ -581,6 +582,10 @@ li::marker {
         line-height: 1.5rem;
         text-align: left;
     }
+    .contact-icon{
+        display: block;
+    }
+
     .back-to-top-pc{
         display: flex;
         right: 8.4%;
@@ -637,6 +642,7 @@ li::marker {
     .exam .container {
         width: min(88%,1240px);
     }
+    
     
 
 }

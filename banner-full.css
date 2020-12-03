@@ -15,8 +15,8 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 565px;
-    -webkit-filter: brightness(70%);
-    filter: brightness(70%);
+    -webkit-filter: brightness(65%);
+    filter: brightness(65%);
 }
 .home-banner{
     background-image: url(img/banner.jpg);

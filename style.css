@@ -633,6 +633,24 @@ hr {
   font-family: PingFang TC;
   font-size: 0.94rem;
 }
+.contact-icon {
+  width: 7%;
+  position: absolute;
+  top: 6%;
+  display: none;
+  right: 2%;
+  transform-origin: left bottom;
+  animation: contactAnime 1s infinite forwards alternate ease-in-out;
+}
+@keyframes contactAnime{
+  0{
+      transform: rotate(5deg);
+  }
+  100%{
+      transform: rotate(15deg);
+  }
+}
+
 .back-to-top {
   width: 2rem;
   height: 2rem;
@@ -1072,6 +1090,9 @@ circle {
     font-size: 0.94rem;
     letter-spacing: 1px;
   }
+  .contact-icon{
+    display: block;
+  }
   
   .back-to-top {
     margin: 0;
@@ -1171,5 +1192,10 @@ circle {
   }
   .contact-link p {
     font-size: 1rem;
+  }
+  .contact-icon {
+    width: 8%;
+    top: 6%;
+    right: 4%;
   }
 }
