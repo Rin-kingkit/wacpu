@@ -9,6 +9,7 @@
     opacity: 0.9;
     z-index: 3;
     cursor: pointer;
+    display: none;
 }
 .back-to-top-float {
     display: flex;
@@ -18,6 +19,7 @@
     background-color: var(--logo-green-middle);
     width: min(11.5vw,55px);
     height: min(11.5vw,55px);
+    
 }
 .back-to-top-float svg {
     width: 46%;

@@ -5,15 +5,15 @@ function backToTop(){
 }
 
 function backToTopScroll(){
-    $('.back-to-top-float').fadeOut()
+    $('.back-to-top-float-box').fadeOut()
     
     $(window).scroll(function(){
         var scrollVal = $(this).scrollTop()
         var windowHeight = $(this).height() / 2
         if(scrollVal>windowHeight){
-            $('.back-to-top-float').fadeIn(300)
+            $('.back-to-top-float-box').fadeIn(300)
         }else{
-            $('.back-to-top-float').fadeOut(300)
+            $('.back-to-top-float-box').fadeOut(300)
         }
     })
 }
