@@ -68,12 +68,12 @@ main {
 .collaboration-btn p {
     color: #fff;
     margin: auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .collaboration-btn svg {
-    width: 0.9375rem;
+    width: 0.85rem;
     position: absolute;
-    right: 1.1rem;
+    right: 1.3rem;
     margin: auto;
     transition: 0.3s;
 }
