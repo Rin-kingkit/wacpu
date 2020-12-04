@@ -22,11 +22,11 @@ header {
     background-image: url(img/banner.jpg);
 }
 .course-banner{
-    background-image: url(img/small-size/course-banner.png);
+    background-image: url(img/small-size/course-banner.jpg);
     background-position: right;
 }
 .resume-banner{
-    background-image: url(img/small-size/resume-banner.png);
+    background-image: url(img/small-size/resume-banner.jpg);
     background-position: right;
 }
 .banner>.container {
