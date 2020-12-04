@@ -157,6 +157,7 @@ main{
     font-size: 1rem;
     margin: auto auto 7% auto;
     font-weight: normal;
+    white-space: nowrap;
 }
 .title-box {
     background-color: var(--logo-green-middle);
