@@ -504,15 +504,19 @@ background-position: bottom;
 .teacher-bar {
   display: flex;
   /* gap: 30vw; */
-  padding-left: 4vw;
+  /* padding-left: 4vw; */
   position: absolute;
-  padding-right: 4vw;
+  /* padding-right: 4vw; */
   
 }
 /* .teacher-bar{
   width: max-content;
 
 } */
+.teacher-box {
+  width: max(70vw,15rem);
+  height: 100%;
+}
 .teacher-circle {
   width: max(60vw,14rem);
   height: max(60vw,14rem);
@@ -520,7 +524,9 @@ background-position: bottom;
   border-radius: 50%;
   scroll-snap-align: center;
   transition: 0.5s;
-  margin-right: 30vw;
+  margin: auto;
+
+  /* margin-right: 30vw; */
 }
 .teacher-circle:nth-of-type(7){
   margin-right: 0;
