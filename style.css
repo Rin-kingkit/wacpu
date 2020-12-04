@@ -637,7 +637,7 @@ hr {
 .contact-icon {
   width: 7%;
   position: absolute;
-  top: 22%;
+  top: 28%;
   display: none;
   right: 5%;
   transform-origin: left bottom;
@@ -1196,7 +1196,7 @@ circle {
   }
   .contact-icon {
     width: 8%;
-    top: 16%;
+    top: 24%;
     right: 7%;
   }
 }
