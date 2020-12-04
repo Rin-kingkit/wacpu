@@ -585,6 +585,23 @@ li::marker {
     .contact-icon{
         display: block;
     }
+    .contact-icon {
+        width: 4%;
+        top: 29%;
+        right: max(4%,2.2rem);
+        transform-origin: bottom;
+        animation: howAnime 1s infinite forwards alternate ease-in-out;
+    }
+    @keyframes howAnime {
+        0{
+            transform: rotate(-5deg);
+        }
+        100%{
+            transform: rotate(15deg);
+        }
+    }
+
+
 
     .back-to-top-pc{
         display: flex;
@@ -641,6 +658,11 @@ li::marker {
     }
     .exam .container {
         width: min(88%,1240px);
+    }
+    .contact-icon {
+        width: 5%;
+        top: 18%;
+        right: max(8%,2.2rem);
     }
     
     
