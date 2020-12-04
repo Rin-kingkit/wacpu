@@ -261,6 +261,7 @@ li::marker {
     line-height: normal;
     font-size: 1rem;
     margin: auto auto 7% auto;
+    white-space: nowrap;
 }
 .exam .title-box{
     background-color: var(--logo-yellow);
