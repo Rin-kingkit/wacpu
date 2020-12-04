@@ -482,6 +482,7 @@ background-position: bottom;
   scrollbar-color: rgba(255, 255, 255, 0.26) transparent;
   scrollbar-width: thin;
   scroll-behavior: smooth;
+  pointer-events: none;
 }
 .teacher-frame{
   -ms-overflow-style: none;  
