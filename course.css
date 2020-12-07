@@ -56,13 +56,12 @@ main{
 
 }
 .btn {
-    width: 30%;
+    width: 31%;
     /* height: 3.125rem; */
     padding: 7px 0 7px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.375rem;
     border: 0.125rem solid var(--logo-green-middle);
     transition: 0.5s ease-out;
 }
@@ -89,7 +88,7 @@ main{
     font-size: 0.85rem;
     text-align: center;
     max-width: 90%;
-    line-height: 1rem;
+    line-height: 1.4;
     transition: all 0.3s ease-out;
 }
 .btn-text-on{
@@ -133,7 +132,6 @@ main{
 }
 .course-intro-box {
     background-color: #f4f4f4;
-    border-radius: 0.5rem;
     padding: 7% 6%;
     border: 3px solid var(--logo-green-middle);
 }
@@ -272,7 +270,7 @@ li::marker {
 }
 .exam .title-box{
     background-color: var(--logo-yellow);
-    padding: 1% 1% 1% 4%;
+    padding: 1% 4% 1% 4%;
 }
 .exam-content > ul {
     list-style-type: square;
@@ -359,7 +357,6 @@ li::marker {
     }
     .btn-text {
         font-size: 0.94rem;
-        line-height: 1.2rem;
     }
     .course-name h3 {
         letter-spacing: 5px;
@@ -410,7 +407,7 @@ li::marker {
         width: 100%;
     }
     .exam .title-box {
-        padding: 0.3% 0.6% 0.3% 2.6%;
+        padding: 0.3% 2.6% 0.3% 2.6%;
     }
     .course-frame {
        box-shadow:0 0 0 0.1875rem var(--logo-green-middle) ,0.3rem 0.3rem 0.01rem var(--logo-green-light)
@@ -510,6 +507,9 @@ li::marker {
     .title-box {
         padding: 4px 15px;
     }
+    .exam .title-box {
+        padding: 4px 15px;
+    }
     .course-content ul {
         line-height: 1.5rem;
     }
@@ -541,6 +541,7 @@ li::marker {
     .btn-text {
         font-size: 0.95rem;
         max-width: unset;
+        line-height: 1.2;
     }
     .exam-content-box {
         width: 92%;
@@ -664,9 +665,6 @@ li::marker {
     }
     .exam-content h6 {
         margin: auto auto 0.7rem 0;
-    }
-    .exam .title-box {
-        padding: 0.3% 0.6% 0.3% 4%;
     }
     .exam .container {
         width: min(88%,1240px);

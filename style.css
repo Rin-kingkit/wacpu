@@ -4,6 +4,7 @@ html{
 }
 html{
   overflow-x: hidden;
+  touch-action: manipulation;
 }
 body {
     width: 100%;
@@ -16,6 +17,7 @@ body{
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  touch-action: manipulation;
 }
 * {
     font-size: 100%;
@@ -229,7 +231,9 @@ header{
     overflow: hidden;
 }
 
-
+.border-radius-frame{
+  border-radius: 0.3125rem;
+}
 
 .container{
   /* width: 100%; */
@@ -367,7 +371,6 @@ header{
   height: 14rem;
   background-size: cover;
   background-position: center;
-  border-radius: 0.45rem;
   /* box-shadow: 0.31rem 0.31rem 0 var(--logo-green); */
   }
   .about01-pic{
@@ -585,7 +588,7 @@ header{
 }
 .green-block-style {
   background-color: var(--logo-green-middle);
-  border-radius: 0.4rem;
+
 }
 .contact-content {
   margin: auto;
@@ -1075,7 +1078,7 @@ circle {
       padding: 1.8rem 0;
     }
     .green-block-style {
-      border-radius: 0.4rem;
+     
     }
     .contact-content {
       flex-direction: row;

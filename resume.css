@@ -35,7 +35,6 @@ main {
 }
 .collaboration-block {
     height: 10.375rem;
-    border-radius: 0.3125rem;
     border: 0.2rem solid var(--logo-green-middle);
     margin-top: 2.2rem;
 }
@@ -59,7 +58,6 @@ main {
     font-size: 1.125rem;
     background-color: var(--logo-green);
     display: flex;
-    border-radius: 0.45rem;
     align-items: center;
     cursor: pointer;
     align-self: center;
@@ -124,7 +122,6 @@ main {
 .photo-img {
     width: 100%;
     height: auto;
-    border-radius: 0.3125rem;
     /* border: 0.25rem solid var(--logo-yellow); */
     background-color: var(--logo-yellow);
 }
@@ -136,7 +133,6 @@ main {
     height: 50px;
     text-align: center;
     line-height: 50px;
-    border-radius: 5px;
     font-size: 1.2rem;
     margin: 2rem auto 0 auto;
     cursor: pointer;
@@ -203,7 +199,6 @@ main {
     /* height: 7.375rem; */
     padding: 0.9375rem;
     background-color: #f4f4f4;
-    border-radius: 0.25rem;
 }
 .list-content {
     display: grid;
@@ -214,13 +209,13 @@ main {
     gap: 0.875rem;
 }
 .list h6{
-    font-size: 0.875rem;
+    font-size: 0.94rem;
     font-weight: 500;
     letter-spacing: 0.05rem;
     line-height: 1rem;
 }
 .list p{
-    font-size: 0.75rem;
+    font-size: 0.84rem;
     color: #606060;
     letter-spacing: 0.05rem;
     line-height: 1.13rem;
@@ -290,7 +285,6 @@ main {
     .photo-img {
         height: 100%;
         object-fit: cover;
-        border-radius: 0.25rem;
     }
     .cross {
         padding: 1% 2% 0 0;
