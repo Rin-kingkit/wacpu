@@ -12,6 +12,8 @@ $('.hamburger-icon').click(function(){
     $('html,body').addClass('back-fixed')
 })
 
+
+
 $('.close-icon').click(function(){
     $('.close-icon').fadeOut(200)
     $('.close-icon').addClass('icon-rotate')

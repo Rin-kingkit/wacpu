@@ -4,9 +4,9 @@ function courseBtn(){
         $('.btn-text').removeClass('btn-text-on').addClass('btn-text-off')
         $(this).removeClass('btn-off').addClass('btn-on')
         $(this).find('.btn-text').removeClass('btn-text-off').addClass('btn-text-on')
-        console.log('12')
     })
 }
+
 function courseLevel(){
     $('.btn1').click(function(){
         $('.course-frame').fadeOut(100)

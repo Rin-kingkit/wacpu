@@ -31,8 +31,11 @@ function homeEffect(){
     })
 }
 
+$('document').ready(function(){
+    if(windowW>992){
+        homeEffect()
+    }
+})
 
-if(windowW>992){
-    homeEffect()
-}
+
 

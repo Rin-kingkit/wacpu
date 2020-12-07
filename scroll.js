@@ -44,13 +44,20 @@ var barMin = circleWidth / 2
 
 var teacherBox = $('.teacher-box').width()
 
-console.log(w)
-console.log(barMax)
 
 // barMax設定為bar的全長
 
-$('.arrow-next').addClass('arrow-next-active')
 
+
+
+
+
+
+
+
+
+
+$('.arrow-next').addClass('arrow-next-active')
 
 
 function teacher(){
@@ -62,10 +69,7 @@ function teacher(){
                 $('.arrow-next').removeClass('arrow-next-active')
             }
         }
-        
-        // $('.teacher-frame').scrollLeft(displace)
         $('.teacher-bar').animate({'margin-left':-displace},300)
-        console.log(displace)
     })
     $('.arrow-pre').click(function(){
         $('.arrow-next').addClass('arrow-next-active')
@@ -75,10 +79,7 @@ function teacher(){
                 $('.arrow-pre').removeClass('arrow-pre-active')
             }
         }
-        
-        // $('.teacher-frame').scrollLeft(displace)
         $('.teacher-bar').animate({'margin-left':-displace},300)
-        console.log(displace)
     })
     
 }
@@ -97,6 +98,3 @@ teacher()
 
 
 
-
-// Ｘ位置改右上角
-// 項目內容縫隙修改
