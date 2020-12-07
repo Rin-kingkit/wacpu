@@ -84,27 +84,7 @@ function teacher(){
 }
 teacher()
 
-// $('.arrow-next').click(function(){
-//     replace = replace+circleWidth+w*0.3
-//     $('.teacher-frame').scrollLeft(replace)
 
-//     console.log(replace)
-// })
-
-// $('.arrow-pre').click(function(){
-//     replace = replace-circleWidth-w*0.3
-//     $('.teacher-frame').scrollLeft(replace)
-// })
-
-
-
-
-
-// $(window).scroll(function(){
-//     if($(window).scrollTop()>200){
-//         console.log('111111')
-//     }
-// })
 
 
 
