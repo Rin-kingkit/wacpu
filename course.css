@@ -536,6 +536,7 @@ li::marker {
     }
     .btn {
         border: 0.165rem solid var(--logo-green-middle);
+        padding: 14px 0;
     }
     .btn-text {
         font-size: 0.95rem;
@@ -624,6 +625,9 @@ li::marker {
     .btn-bar {
         max-width: 56rem;
         margin: 2.25rem auto 0 auto;
+    }
+    .btn{
+        padding: 16px 0;
     }
     .btn-text {
         font-size: 1.1rem;
