@@ -49,9 +49,6 @@ for(j=2;j<=37;j++){
     clone()
 }
 
-
-
-
 //更改內容
 function input(){
     for(i=1;i<=37;i++){
@@ -59,4 +56,6 @@ function input(){
         $('.list-box:nth-of-type('+i+') p').html(order[i].content)
     }
 }
+
+
 input()
