@@ -773,8 +773,7 @@ circle {
     height: max(55vw,15rem);
   }
   .teacher-bar {
-    padding-left: 8vw;
-    padding-right: 8vw;
+
   }
   .teacher-circle {
     width: max(54vw,14rem);
@@ -1050,6 +1049,12 @@ circle {
     width: 27.44rem;
     height: 23.44rem;
   }
+  .teacher-bar{
+
+  }
+  .teacher-box {
+    width: 27.44rem;
+}
   .teacher-arrow {
     width: 3%;
   }
@@ -1204,7 +1209,7 @@ circle {
     line-height: 1.5rem;
   }
   .teacher-bar {
-    padding-left: 4vw;
+
   }
   .teacher-exp {
     font-size: 0.8rem;
