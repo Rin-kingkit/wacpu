@@ -358,9 +358,9 @@ header{
   margin-top: 6.23rem;
 }
 .about-block{
-  display: flex;
+  display: grid;
   flex-direction: column;
-  /* gap: 1.56rem; */
+  gap: 1rem;
 }
 .about-pic {
   width: 100%;
@@ -381,11 +381,11 @@ header{
   }
 .about-content {
     display: grid;
-    grid-template-rows: 7.875rem 1fr;
+    grid-template-rows: min-content 1fr;
     grid-template-columns: 1fr 1fr;
-    /* grid-row-gap: 0.625rem; */
-    /* align-items: center; */
-    margin-top: 2rem;
+    grid-row-gap: 1rem;
+    align-items: center;
+    /* margin-top: 2rem; */
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -558,13 +558,13 @@ background-position: bottom;
   font-weight: bold;
 }
 .teacher-exp {
-  font-size: 0.5rem;
+  font-size: 12px;
   color: var(--word-color);
   opacity: 0.78;
   text-align: center;
-  word-break: keep-all;
+  /* word-break: keep-all; */
   line-height: 1rem;
-  max-width: 14.25rem;
+  max-width: 74%;
   font-weight: bold;
   line-height: 0.9rem;
   
@@ -782,6 +782,10 @@ circle {
   .teacher-name {
     font-size: 1.4rem;
   }
+  .teacher-exp{
+    font-size: 14px;
+    line-height: 18px;
+  }
   .contact-link {
     width: 19rem;
   }
@@ -846,6 +850,11 @@ circle {
   .about03-content {
     background-size: 20%;
   }
+  .teacher-exp{
+    font-size: 16px;
+    max-width: 13.25rem;
+  }
+
   .container {
     width: min(88%);
   }
@@ -958,12 +967,12 @@ circle {
     line-height: 1.4rem;
   }
   .about-block {
+    display: flex;
     flex-direction: row;
     height: 20rem;
-    gap: 7%;
   }
   .about-container {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
   .about02 {
     height: 20rem;
@@ -1070,7 +1079,6 @@ circle {
     margin-top: 1.064rem;
   }
     .teacher-exp {
-    font-size: 0.76rem;
     line-height: 1.04rem;
     max-width: 230px;
     margin-top: 0.6rem;
@@ -1186,10 +1194,19 @@ circle {
 }
   .about-pic {
     width: 50%;
+    margin-right: 10%;
   }
   .about-content {
     width: 40%;
   }
+  .about-container {
+    margin-top: 6rem;
+}
+  .about02 .about-pic{
+    margin-left: 10%;
+    margin-right: 0;
+  }
+
   h3 {
     font-size: 2.8rem;
   }
@@ -1212,8 +1229,9 @@ circle {
 
   }
   .teacher-exp {
-    font-size: 0.8rem;
+    font-size: 16px;
     font-weight: bold;
+    max-width: 270px;
 }
   #contact h2{
     font-size: 1.72rem;

@@ -57,7 +57,8 @@ main{
 }
 .btn {
     width: 30%;
-    height: 3.125rem;
+    /* height: 3.125rem; */
+    padding: 7px 0 7px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,9 +86,9 @@ main{
     /* max-width: 75%; */
 }
 .btn-text{
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     text-align: center;
-    max-width: 86%;
+    max-width: 90%;
     line-height: 1rem;
     transition: all 0.3s ease-out;
 }
@@ -138,9 +139,10 @@ main{
 }
 .exam .course-intro-box {
     border: 2px solid var(--logo-yellow);
+    margin-top: 1.25rem;
 }
 .course-box {
-    padding: 2.5rem 0 2rem 0;
+    padding: 1.5rem 0 2rem 0;
 }
 .course-container{
     width: 90%;
@@ -196,14 +198,16 @@ li::marker {
     margin-top: 3.125rem;
     display: flex;
     flex-direction: column;
-    gap: 3.75rem;
+    /* gap: 3.75rem; */
 }
 .exam-frame {
     background-color: #fff;
     box-shadow: 0 0 0 0.3rem var(--logo-yellow);
     border-radius: 0.1875rem;
 }
-
+.teacher-exam{
+    margin-top: 3.75rem;
+}
 .exam-pic-box {
     width: 100%;
     height: 13.25rem;
@@ -245,10 +249,13 @@ li::marker {
     color: var(--word-color-light-light);
 }
 .exam-content-container {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    /* gap: 1.25rem; */
+}
+.exam .course-intro-box:nth-of-type(1) {
+    margin-top: 0;
 }
 .exam-content > h6.underline::after {
     top: -0.55rem;
@@ -284,14 +291,7 @@ li::marker {
     display: flex;
     padding: 2.5rem 0;
 }
-.how-content {
-    margin: auto;
-    width: 68%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1.875rem;
-}
+
 .how-content h2 {
     font-size: 1.75rem;
     color: #fff;
@@ -358,8 +358,8 @@ li::marker {
         /* height: 64vh; */
     }
     .btn-text {
-        font-size: 0.8rem;
-        letter-spacing: 0.06rem;
+        font-size: 0.94rem;
+        line-height: 1.2rem;
     }
     .course-name h3 {
         letter-spacing: 5px;
@@ -406,7 +406,7 @@ li::marker {
         line-height: 1.4rem;
     }
     .exam-frame {
-        margin: auto;
+        /* margin: auto; */
         width: 100%;
     }
     .exam .title-box {
@@ -523,10 +523,13 @@ li::marker {
     .exam-frame {
         margin: unset;
     }
+    .teacher-exam {
+        margin-left: min(4%,3.2rem);
+    }
     .exam-block {
         flex-direction: row;
         margin: 3rem auto 0 auto;
-        gap: min(4%,3.2rem);
+        /* gap: min(4%,3.2rem); */
     }
     .exam .course-intro-box {
         padding: 5% 7%;
@@ -644,7 +647,10 @@ li::marker {
         padding: 4.5rem 0 5rem 0;
     }
     .exam-block {
-        gap: min(3%,3.2rem);
+        /* gap: min(3%,3.2rem); */
+    }
+    .teacher-exam {
+        margin-left: min(3%,3.2rem);
     }
     .exam-content-box {
         width: 88%;
