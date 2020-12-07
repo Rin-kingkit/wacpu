@@ -394,11 +394,10 @@ header{
   background-size: 60%;
 }.about02-content {
   background-image: url(img/about02-background.svg);
-  background-size: 25%;
-background-position: bottom;
+  background-size: 16%;
 }.about03-content {
   background-image: url(img/about03-background.svg);
-  background-size: 30%;
+  background-size: 22%;
 }
 
 .number{
@@ -759,6 +758,15 @@ circle {
   }
   .about-pic {
     height: 18rem;
+  }
+  .about01-content {
+    background-size: 50%;
+  }
+  .about02-content {
+    background-size: 12%;
+}
+  .about03-content {
+    background-size: 18%;
   }
   .subject h2 {
     font-size: 2rem;
