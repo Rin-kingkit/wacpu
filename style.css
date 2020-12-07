@@ -835,7 +835,7 @@ circle {
     border-radius: 0.1rem;
   }
   .about-content > .underline::after {
-    top: -1.14rem;
+    top: -0.96rem;
   }
   .about-pic {
     height: 17rem;
