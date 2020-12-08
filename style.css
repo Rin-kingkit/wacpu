@@ -350,7 +350,6 @@ header{
   margin-top: 2.2rem;
   line-height: 1.56rem;
   letter-spacing: 0.1rem;
-  font-size: 0.94rem;
   word-break: break-all;
 }
 .about-container {
@@ -731,9 +730,6 @@ circle {
   .hamburger {
     width: min(9%,42px);
 }
-  .subject p {
-    font-size: 0.94rem;
-  }
   .about {
     padding-bottom: 4.5rem;
   }
@@ -948,7 +944,6 @@ circle {
     font-size: 2.24rem;
   }
   .subject p {
-    font-size: 0.94rem;
     margin-top: 2rem;
     line-height: 1.4rem;
   }
@@ -1168,7 +1163,7 @@ circle {
   }
   .word-small {
     font-size: 1rem;
-}
+  }
   .about-pic {
     width: 50%;
     margin-right: 10%;
