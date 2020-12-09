@@ -46,7 +46,9 @@
 .collaboration-block {
     height: unset
  }
-    
+.list h6{
+    line-height: 1.4;
+}
  .inside-list-btn{
     width: 210px;
  }
