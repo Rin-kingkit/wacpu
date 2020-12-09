@@ -52,6 +52,9 @@ p{
   color: var(--word-color);
   max-height: 100%;
 }
+li {
+  max-height: 100%;
+}
 a {
   text-decoration: none;
 }
