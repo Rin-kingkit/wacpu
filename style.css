@@ -19,6 +19,13 @@ body{
   overflow-x: hidden;
   touch-action: manipulation;
 }
+html, body {
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;  
+}
+
 * {
     font-size: 100%;
     margin: 0;
