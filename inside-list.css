@@ -69,9 +69,6 @@
 }
 
 @media (min-width: 768px) {
-    .list h6 {
-        font-size: 0.8rem;
-    }
     .list p {
         font-size: 0.7rem;
     }
@@ -103,7 +100,6 @@
     }
     .list h6 {
         width: 44%;
-        font-size: 0.94rem;
     }
     .list p {
         width: 48%;
@@ -137,7 +133,6 @@
         right: 0;
     }
     .list h6 {
-        font-size: 1rem;
         line-height: 1.4rem;
     }
     .list p {
