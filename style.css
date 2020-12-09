@@ -19,7 +19,7 @@ body{
   overflow-x: hidden;
   touch-action: manipulation;
 }
-html, body {
+html, body,li {
   -webkit-text-size-adjust: none;
      -moz-text-size-adjust: none;
       -ms-text-size-adjust: none;
