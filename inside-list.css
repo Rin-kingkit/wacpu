@@ -8,7 +8,7 @@
     background-color: transparent;
     width: 100%;
     height: 100%;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 .co-list  .list-block-style {
         background-color: transparent;
@@ -38,7 +38,7 @@
 }
 .collaboration-block {
     height: unset;
-    padding: 2rem 0;
+    padding: 36px 0;
 }
 .collaboration-container {
     height: unset;
@@ -145,7 +145,7 @@
         display: flex;
     }
     .list-box {
-        padding: 0.9375rem 1.1rem 0.9375rem 1.5rem;
+        padding: 17px 19px 17px 27px;
     }
     .resume-btn {
         max-width: 13rem;
@@ -167,7 +167,7 @@
 }
 @media (min-width: 1200px) {
     .list-box {
-        padding: 1rem 1.3rem 1rem 2.5rem;
+        padding: 18px 23px 18px 45px;
     }
     .resume-btn {
         padding: 0px 2% 0 4%;

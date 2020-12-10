@@ -47,10 +47,10 @@ header {
 .banner-slogan h1 {
     font-weight: bold;
     margin-top: max(45vh,282px);
-    font-size: 2.125rem;
+    font-size: 34px;
 }
 .banner-slogan p {
-    font-size: 0.94rem;
+    font-size: 15px;
     line-height: 1.3rem;
     margin-top: 1.5rem;
     letter-spacing: 2px;

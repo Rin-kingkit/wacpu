@@ -74,8 +74,8 @@ h3 {
   font-size: 1.8rem;
   }
 .word-small{
-  line-height: 1.56rem;
-  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  letter-spacing: 2px;
   font-size: 15px;
   word-break: break-all;
 }
@@ -321,8 +321,7 @@ header{
 
 .about {
   width: 100%;
-  padding-bottom: 6.25rem;
-  padding-top: 4rem;
+  padding: 64px 0 100px 0;
 }
 .subject {
    /* margin-top: 5rem; */
@@ -364,8 +363,6 @@ header{
 
 .subject p {
   margin-top: 2.2rem;
-  line-height: 1.56rem;
-  letter-spacing: 0.1rem;
   word-break: break-all;
 }
 .about-container {
@@ -729,9 +726,6 @@ circle {
   html{
     font-size: 18px;
   }
-  h3 {
-    font-size: 1.8rem;
-  }
   header {
     height: 70px;
   }
@@ -747,6 +741,8 @@ circle {
 }
   .word-small{
     font-size: 18px;
+    letter-spacing: 2.5px;
+    line-height: 1.4;
   }
   .word-medium{
     font-size: 32px;
@@ -847,7 +843,7 @@ circle {
     border-radius: 0.1rem;
   }
   .about-content > .underline::after {
-    top: -0.96rem;
+    top: -25px;
   }
   .about-pic {
     height: 17rem;
@@ -897,6 +893,7 @@ circle {
   }
   .word-small{
     font-size: 17px;
+    line-height: 1.5;
   }
   .word-medium{
     font-size: 36px;
@@ -929,6 +926,7 @@ circle {
     width: max(28%,350px);
     align-items: center;
     justify-content: space-between;
+    line-height: unset;
   }
 
   .container {
@@ -975,7 +973,6 @@ circle {
   }
   .subject p {
     margin-top: 2rem;
-    line-height: 1.4rem;
   }
   .about-block {
     display: flex;
@@ -1040,9 +1037,6 @@ circle {
   .number {
     font-size: 7rem;
     top: -1rem;
-  }
-  h3 {
-    font-size: 2rem;
   }
 
 
@@ -1168,9 +1162,6 @@ circle {
  .home-effect:after{
    width: 0%;
  }
- .home-effect-on{
-
- }
  .home-effect-on:after{
    width: 104%;
    transition: 0.8s;
@@ -1214,12 +1205,11 @@ circle {
     margin-left: 10%;
     margin-right: 0;
   }
-
-  h3 {
-    font-size: 2.8rem;
+  .about-content h3{
+    line-height: unset;
   }
   .about-content > .underline::after {
-    top: -0.5rem;
+    top: -0.4rem;
   }
   .about01 .decoration-circle {
     right: 42%;
@@ -1231,7 +1221,6 @@ circle {
   }
   .teacher .subject > p {
     width: 50rem;
-    line-height: 1.5rem;
   }
   .teacher-bar {
 
