@@ -46,12 +46,44 @@
 .collaboration-block {
     height: unset
  }
-.list h6{
-    line-height: 1.4;
-}
  .inside-list-btn{
-    width: 210px;
+    
+    background-color: var(--logo-green);
  }
+
+ .resume-btn{
+    width: 210px;
+    text-align: center;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    align-self: center;
+}
+.photo-btn {
+    background-color: var(--logo-yellow);
+    color: #fff;
+    text-align: center;
+    margin: 2rem auto 0 auto;
+}
+.resume-btn p {
+    color: #fff;
+    margin: auto;
+    font-size: 18px;
+}
+.resume-btn svg {
+    width: 0.85rem;
+    position: absolute;
+    right: 1.3rem;
+    margin: auto;
+    transition: 0.3s;
+}
+.photo-btn svg {
+    width: 26px;
+}
+.resume-btn:hover svg{
+    transform: rotate(-15deg);
+}
 
  .inside-list-close{
 
@@ -61,31 +93,34 @@
 }
 
 @media (min-width: 576px) {
-    .inside-list-btn {
+    .resume-btn {
         width: 250px;
+        max-width: 21rem;
+        height: 2.7rem;
     }
-    .collaboration-btn svg {
+    .resume-btn p {
+        font-size: 20px;
+    }
+    .resume-btn svg {
         right: 1.2rem;
     }
     
 }
 
 @media (min-width: 768px) {
-    .list p {
-        font-size: 0.7rem;
+    .resume-btn {
+        width: 260px;
+        height: 56px;
     }
-    .inside-list-btn {
-        width: 310px;
-    }
-    .collaboration-btn p {
+    .resume-btn p {
         font-size: 0.94rem;
     }
-    .collaboration-btn svg {
-        right: 1.4rem;
+    .resume-btn svg {
+        right: 24px;
         width: 0.8rem;
     }
-    .photo-btn{
-        font-size: 0.94rem;
+    .photo-btn svg{
+        width: 28px;
     }
 }
 @media (min-width: 992px) {
@@ -105,7 +140,6 @@
     }
     .list p {
         width: 48%;
-        font-size: 0.85rem;
     }
     .list-content {
         display: flex;
@@ -113,31 +147,39 @@
     .list-box {
         padding: 0.9375rem 1.1rem 0.9375rem 1.5rem;
     }
-    .collaboration-btn p {
-        font-size: 1.1rem;
-    }
-    .collaboration-btn svg {
-        right: -0.5rem;
+    .resume-btn {
+        max-width: 13rem;
+        justify-content: space-evenly;
+        padding: 0px 2% 0 4%;
     }
     .photo-btn {
+        padding: 0px 2% 0 5%;
+    }
+    .resume-btn p {
         font-size: 1.1rem;
+        margin: unset;
+    }
+    .resume-btn svg {
+        right: -0.5rem;
+        position: relative;
+        margin: unset;
     }
 }
 @media (min-width: 1200px) {
     .list-box {
         padding: 1rem 1.3rem 1rem 2.5rem;
     }
-    .collaboration-btn {
+    .resume-btn {
         padding: 0px 2% 0 4%;
         max-width: 12.4rem;
+        justify-content: space-between;
+        width: 224px;
+        height: 54px;
     }
-    .collaboration-btn svg {
+    .photo-btn{
+        padding: 0px 2% 0 5%;
+    }
+    .resume-btn svg {
         right: 0;
-    }
-    .list h6 {
-        line-height: 1.4rem;
-    }
-    .list p {
-        font-size: 0.94rem;
     }
 }

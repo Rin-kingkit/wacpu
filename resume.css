@@ -51,33 +51,9 @@ main {
     text-align: center;
     font-weight: normal;
 }
-.collaboration-btn {
-    width: 100%;
-    text-align: center;
-    height: 3rem;
-    font-size: 1.125rem;
-    background-color: var(--logo-green);
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    align-self: center;
-}
 
-.collaboration-btn p {
-    color: #fff;
-    margin: auto;
-    font-size: 1rem;
-}
-.collaboration-btn svg {
-    width: 0.85rem;
-    position: absolute;
-    right: 1.3rem;
-    margin: auto;
-    transition: 0.3s;
-}
-.collaboration-btn:hover svg{
-    transform: rotate(-15deg);
-}
+
+
 .collaboration .co-list{
     /* display: block; */
 }
@@ -125,18 +101,7 @@ main {
     /* border: 0.25rem solid var(--logo-yellow); */
     background-color: var(--logo-yellow);
 }
-.photo-btn {
-    width: 200px;
-    background-clip: ;
-    background-color: var(--logo-yellow);
-    color: #fff;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 1.2rem;
-    margin: 2rem auto 0 auto;
-    cursor: pointer;
-}
+
 
 
 
@@ -210,10 +175,7 @@ main {
 }
 
 .list p{
-    font-size: 0.84rem;
     color: #606060;
-    letter-spacing: 0.05rem;
-    line-height: 1.13rem;
 }
 .cross {
     width: 100%;
@@ -233,10 +195,7 @@ main {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .collaboration-btn {
-        max-width: 21rem;
-        height: 2.7rem;
-    }
+    
 
     
     .resume-banner-style {
@@ -253,9 +212,6 @@ main {
     }
     .cross {
         padding: 2% 2% 2% 0;
-    }
-    .list p {
-        font-size: 0.8rem;
     }
 }
 
@@ -309,21 +265,7 @@ main {
     .collaboration-block {
         height: 7.44rem;
     }
-    .collaboration-btn {
-        max-width: 13rem;
-        justify-content: space-evenly;
-        padding: 0px 2% 0 4%;
-    }
-    .collaboration-btn p {
-        margin: unset;
-        font-size: 1rem;
-    }
-    .collaboration-btn svg {
-        position: relative;
-        right: unset;
-        margin: unset;
-        width: 0.84rem;
-    }
+
 
     /************************* list *******************/
     .type{
@@ -345,11 +287,6 @@ main {
     .list-content {
         flex-direction: row;
         align-items: center;
-    }
-    .list p {
-        line-height: 1.6rem;
-        width: 50%;
-        font-size: 0.9rem;
     }
     .list-bar {
         width: 96%;
@@ -387,25 +324,15 @@ main {
         width: min(85%,1640px);
         grid-column-gap: 2%;
     }
-    .collaboration-btn {
-        width: 12.5rem;
-        padding: 0 1.4rem 0 1.4rem;
-        justify-content: space-between;
-    }
+
     .collaboration h2 {
         font-size: 1.4rem;
-    }
-    .collaboration-btn p {
-        font-size: 1.12rem;
     }
     .list-box {
         padding: 0.9375rem 2rem;
     }
     .list-content {
         gap: 7%;
-    }
-    .list p {
-        font-size: 1rem;
     }
 
 }

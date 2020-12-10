@@ -5,7 +5,7 @@ var listFrameHeight = photoContainerHeight + 45
 
 $('.inside-list-open').click(function(){
     $('.co-list .list-frame').animate({height:listBarHeight},800)
-    $('.collaboration-btn').fadeOut()
+    $('.inside-list-btn').fadeOut()
 })
 
 
