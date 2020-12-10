@@ -113,7 +113,7 @@
         height: 56px;
     }
     .resume-btn p {
-        font-size: 0.94rem;
+        font-size: 22px;
     }
     .resume-btn svg {
         right: 24px;
@@ -156,7 +156,7 @@
         padding: 0px 2% 0 5%;
     }
     .resume-btn p {
-        font-size: 1.1rem;
+        font-size: 20px;
         margin: unset;
     }
     .resume-btn svg {

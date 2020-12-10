@@ -50,9 +50,9 @@ header {
     font-size: 34px;
 }
 .banner-slogan p {
+    line-height: 20px;
+    margin-top: 24px;
     font-size: 15px;
-    line-height: 1.3rem;
-    margin-top: 1.5rem;
     letter-spacing: 2px;
 }
 
@@ -61,23 +61,18 @@ header {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .banner-slogan h1 {
-        font-size: 2.2rem;
+        font-size: 40px;
     }
     .banner-slogan p {
-        font-size: 0.94rem;
-        margin-top: 1.2rem;
+        font-size: 18px;
+        margin-top: 20px;
     }
  }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     .banner-slogan h1 {
-        font-size: 1.8rem;
-    }
-    .banner-slogan p {
-        font-size: 0.7rem;
-        margin-top: 1rem;
-        letter-spacing: 3px;
+        font-size: 44px;
     }
  }
 
@@ -110,12 +105,11 @@ header {
         margin: unset;
     }
     .banner-slogan h1 {
-        font-size: 2.8rem;
+        font-size: 50px;
         margin-top: max(43vh, 282px);
     }
     .banner-slogan p {
-        font-size: 0.94rem;
-        margin-top: 0.8rem;
+        margin-top: 14px;
     }
  }
 
@@ -128,11 +122,9 @@ header {
         width: min(85%,1240px);
     }
     .banner-slogan h1 {
-        font-size: 3rem; 
+        font-size: 54px;
     }
     .banner-slogan p {
-        margin-top: 0.8rem;
-        font-size: 1rem;
         letter-spacing: 3px;
     }
  }

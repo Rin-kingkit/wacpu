@@ -46,14 +46,6 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
-.collaboration h2 {
-    font-size: 1.25rem;
-    text-align: center;
-    font-weight: normal;
-}
-
-
-
 .collaboration .co-list{
     /* display: block; */
 }
@@ -275,7 +267,7 @@ main {
         justify-content: space-around;
         width: 92%;
         margin: 0.6rem auto 1.2rem 0;
-        font-size: 1.2rem;
+        font-size: 22px;
     }
     .list-block-style {
         border: 1.2rem solid var(--logo-green-middle);
@@ -323,10 +315,6 @@ main {
         grid-template-columns: repeat(3,1fr);
         width: min(85%,1640px);
         grid-column-gap: 2%;
-    }
-
-    .collaboration h2 {
-        font-size: 1.4rem;
     }
     .list-box {
         padding: 0.9375rem 2rem;

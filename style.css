@@ -124,7 +124,7 @@ header{
 }
 
 .nav {
-  font-size: 1.15rem;
+  font-size: 21px;
   padding: 5px 0;
 }
 .nav-bar{
@@ -188,7 +188,6 @@ header{
   flex-direction: column;
   align-items: baseline;
   justify-content: space-between;
-  font-size: 2rem;
   top: -100vh;
 }
 .close-icon{
@@ -200,7 +199,7 @@ header{
   z-index: 3;
 }
 .navi .nav a {
-  font-size: 1.5rem;
+  font-size: 24px;
   color: var(--logo-green);
   width: 100%;
   display: flex;
@@ -277,24 +276,7 @@ header{
   background-position-x: center;
   border-radius: 0.94rem;
 }
-/* .banner-full{
-  
-}
-.banner-full>.banner{
-  height: 100%;
-  border-radius: 0;
-} */
-.intro-block img{
-  display: none;
-}
-.intro{
-  font-size: 1rem;
-  margin: 30px 5px;
-}
-.intro-style{
-  line-height: 1.75rem;
-  color: var(--word-color);
-}
+
 .down {
   margin-top: auto;
   margin-bottom: 3vh;
@@ -330,7 +312,6 @@ header{
 }
 .subject h2 {
   margin: auto;
-  /* border-bottom: 0.44rem solid var(--logo-green-light); */
 }
 
 
@@ -416,7 +397,7 @@ header{
 }
 
 .number{
-  font-size: 5.6rem;
+  font-size: 90px;
   font-weight: 500;
   letter-spacing: 0.3rem;
   grid-row: 1/2;
@@ -567,7 +548,7 @@ header{
   width: max(3.5rem,24%);
 }
 .teacher-name {
-  font-size: 1.2rem;
+  font-size: 20px;
   font-weight: 500;
   font-weight: bold;
 }
@@ -659,7 +640,7 @@ hr {
   white-space: nowrap;
   font-weight: 400;
   font-family: PingFang TC;
-  font-size: 0.94rem;
+  font-size: 15px;
 }
 .contact-icon {
   width: 7%;
@@ -750,6 +731,9 @@ circle {
   .word-large{
     font-size: 36px;
   }
+  .navi .nav a {
+    font-size: 28px;
+  }
   .about {
     padding-bottom: 4.5rem;
   }
@@ -764,6 +748,9 @@ circle {
 }
   .about03-content {
     background-size: 18%;
+  }
+  .number{
+    font-size: 100px;
   }
   .teacher {
     padding-bottom: 2rem;
@@ -782,7 +769,7 @@ circle {
     height: max(54vw,14rem);
   }
   .teacher-name {
-    font-size: 1.4rem;
+    font-size: 26px;
   }
   .teacher-exp{
     font-size: 14px;
@@ -822,17 +809,14 @@ circle {
   .navi {
     padding: 25vh 20vw 33vh 20vw;
   }
+  .navi .nav a {
+    font-size: 32px;
+  }
   .banner {
     height: 72vh;
   }
   .banner-block {
     height: calc(94vh - 80px);
-  }
-  .intro {
-    font-size: 0.83rem;
-  }
-  .intro-style {
-    line-height: 1.25rem;
   }
   .down img {
     width: 4%;
@@ -858,9 +842,16 @@ circle {
   .about03-content {
     background-size: 20%;
   }
+  .number{
+    font-size: 134px;
+  }
+  .teacher-name {
+    font-size: 32px;
+  }
   .teacher-exp{
-    font-size: 16px;
+    font-size: 18px;
     max-width: 13.25rem;
+    line-height: 1.4;
   }
 
   .container {
@@ -928,6 +919,7 @@ circle {
     justify-content: space-between;
     line-height: unset;
   }
+  
 
   .container {
     width: min(90%,960px);
@@ -941,28 +933,6 @@ circle {
   }
   .banner-style {
     border-radius: 0 0 0 0.94rem;
-  }
-
-  .intro-block{
-    position: absolute;
-    background-color: #fff;
-    border-radius: 1.2rem;
-    width: 32%;
-    height: 23%;
-    bottom: 1%;
-    right: -3%;
-    display: flex;
-    padding: 3%;
-    
-  }
-  .intro-block img{
-    display: block;
-    margin: auto;
-    width: 69%;
-  }
-  .intro {
-    margin: auto;
-    font-size: 0.8rem;
   }
   .about {  
     padding-top: 4.5rem;
@@ -1035,12 +1005,9 @@ circle {
     line-height: 1.4rem;
   }
   .number {
-    font-size: 7rem;
-    top: -1rem;
+    font-size: 126px;
+    top: -18px;
   }
-
-
-
   .teacher{
     padding-top: 4rem;
     padding-bottom: 1rem;
@@ -1080,12 +1047,13 @@ circle {
     justify-content:unset;
   }
     .teacher-name {
-    font-size: 1.6rem;
+      font-size: 28px;
     margin-top: 1.064rem;
   }
     .teacher-exp {
-    line-height: 1.04rem;
-    max-width: 230px;
+      font-size: 16px;
+      line-height: 1.2;
+    max-width: 250px;
     margin-top: 0.6rem;
     font-weight: bold;
   }
@@ -1105,7 +1073,7 @@ circle {
       height: 6.8rem;
     }
     #contact h2 {
-      font-size: 1.5rem;
+      font-size: 28px;
       white-space: nowrap;
     }
     hr {
@@ -1131,7 +1099,7 @@ circle {
   }
   .contact-link p {
     white-space: nowrap;
-    font-size: 0.94rem;
+    font-size: 18px;
     letter-spacing: 1px;
   }
   .contact-icon{
@@ -1179,11 +1147,13 @@ circle {
   .container {
     width: min(85%,1240px);
   }
+  
+
   .about-block {
     /* gap: 10%;   */
   }
   .word-small {
-    font-size: 1rem;
+    font-size: 18px;
   }
   .word-medium{
 
@@ -1231,7 +1201,7 @@ circle {
     max-width: 270px;
 }
   #contact h2{
-    font-size: 1.72rem;
+    font-size: 30px;
   }
   hr{
     margin-left: 3rem;
@@ -1240,7 +1210,7 @@ circle {
     margin-left: 3rem;
   }
   .contact-link p {
-    font-size: 1rem;
+    font-size: 18px;
   }
   .contact-icon {
     width: 8%;

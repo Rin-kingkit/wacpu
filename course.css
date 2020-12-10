@@ -85,7 +85,7 @@ main{
     /* max-width: 75%; */
 }
 .btn-text{
-    font-size: 0.85rem;
+    font-size: 13px;
     text-align: center;
     max-width: 90%;
     line-height: 1.4;
@@ -127,7 +127,7 @@ main{
     line-height: 3.75rem;
     text-align: center;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: normal;
 }
 .course-intro-box {
@@ -155,7 +155,7 @@ main{
 }
 .course-content h6 {
     width: max-content;
-    font-size: 1rem;
+    font-size: 16px;
     margin: auto auto 7% auto;
     font-weight: normal;
     white-space: nowrap;
@@ -237,7 +237,7 @@ li::marker {
 }
 .exam-content-box > h3 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -266,7 +266,7 @@ li::marker {
 .exam-content h6 {
     font-weight: normal;
     line-height: normal;
-    font-size: 1rem;
+    font-size: 18px;
     margin: auto auto 7% auto;
     white-space: nowrap;
 }
@@ -307,7 +307,7 @@ li::marker {
 }
 .how-content p {
     color: #fff;
-    font-size: 0.94rem;
+    font-size: 15px;
     letter-spacing: 0.05rem;
     line-height: 1.3125rem;
 }
@@ -358,14 +358,19 @@ li::marker {
         /* height: 64vh; */
     }
     .btn-text {
-        font-size: 0.94rem;
+        font-size: 16px;
     }
     .course-name h3 {
         letter-spacing: 5px;
     }
     .course-content h6,.exam-content h6 {
-        margin-bottom: 1.8rem;
-        
+        margin-bottom: 1.8rem;  
+    }
+    .course-content h6{
+        font-size: 18px;
+    }
+    .exam-content-box > h3 {
+        font-size: 28px;
     }
     #contact {
         padding: 3.5rem 0;
@@ -374,7 +379,7 @@ li::marker {
         padding: 3.5rem 0;
     }
     .how .contact-link p {
-        font-size: 1rem;
+        font-size: 18px;
         width: unset;
     }
 }
@@ -387,13 +392,24 @@ li::marker {
     .course-frame {
         margin: auto;
     }
+    .course-name h3 {
+        font-size: 34px;
+        height: 80px;
+        line-height: 80px;
+    }
     .course-box {
         padding: 1.6rem 0 2rem 0;
     }
+
     .course-intro-box {
         padding: 5% 7%;
     }
-
+    .course-content h6{
+        font-size: 24px;
+    }
+    .exam-content-box > h3 {
+        font-size: 34px;
+    }
     .title-box {
         padding: 0.3% 2.6%;
         border-radius: 0.15rem;
@@ -415,7 +431,7 @@ li::marker {
        box-shadow:0 0 0 0.1875rem var(--logo-green-middle) ,0.3rem 0.3rem 0.01rem var(--logo-green-light)
     }
     .btn-text {
-        letter-spacing: 0.15rem;
+        letter-spacing: 3px;
     }
     .course-content h6,.exam-content h6 {
         margin-bottom: 1.4rem;
@@ -427,7 +443,7 @@ li::marker {
         align-items: unset;
     }
     .how .contact-link p {
-        font-size: 0.8rem;
+        font-size: 20px;
         width: unset;
     }
     
@@ -449,7 +465,7 @@ li::marker {
         padding-top: 0;
     }
     .btn1 > .btn-text,.btn2 > .btn-text {
-        font-size: 1.2rem;
+        font-size: 20px;
     }
     .btn-off:hover .btn-text-off {
         letter-spacing: 0.1rem;
@@ -469,7 +485,9 @@ li::marker {
     .course-box {
         padding: 1.8em 0 3rem 0;
     }
-
+    .course-name h3 {
+        font-size: 28px;
+    }
     .course-intro-box {
         padding: 1.6rem 2.8rem;
     }
@@ -504,7 +522,7 @@ li::marker {
         padding: 2.5rem 0 2.5rem 0;
     }
     .course-content h6 {
-        font-size: 1.2rem;
+        font-size: 20px;
     }
     .title-box {
         padding: 4px 15px;
@@ -541,7 +559,7 @@ li::marker {
         padding: 14px 0;
     }
     .btn-text {
-        font-size: 0.95rem;
+        font-size: 18px;
         max-width: unset;
         line-height: 1.2;
     }
@@ -553,6 +571,7 @@ li::marker {
     }
     .exam-content-box > h3 {
         height: 3.4rem;
+        font-size: 28px;
     }
     .exam-content h6 {
         margin: auto auto 0.5rem 0;
@@ -568,7 +587,7 @@ li::marker {
     }
     .how .contact-link p {
         line-height: 1.8rem;
-        font-size: 1.08rem;
+        font-size: 18px;
     }
 
     #how {
@@ -633,7 +652,7 @@ li::marker {
         padding: 16px 0;
     }
     .btn-text {
-        font-size: 1.1rem;
+        font-size: 20px;
     }
     #course {
         padding-top: 4.5rem;
