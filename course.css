@@ -53,11 +53,9 @@ main{
     top: 0;
     left: 0;
     z-index: -1;
-
 }
 .btn {
     width: 31%;
-    /* height: 3.125rem; */
     padding: 7px 0 7px 0;
     display: flex;
     justify-content: center;
@@ -75,14 +73,10 @@ main{
     cursor: pointer;
 }
 .btn-off:hover{
-    /* background-color: var(--logo-yellow); */
-    /* border: 0.125rem solid var(--logo-yellow); */
+
 }
 .btn-off:hover .btn-text-off{
-    /* color: #fff; */
     color: var(--logo-green-middle);
-    /* letter-spacing: 0.1rem; */
-    /* max-width: 75%; */
 }
 .btn-text{
     font-size: 13px;

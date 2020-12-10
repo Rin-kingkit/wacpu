@@ -559,7 +559,7 @@ header{
   text-align: center;
   /* word-break: keep-all; */
   line-height: 1rem;
-  max-width: 74%;
+  max-width: 84%;
   font-weight: bold;
   line-height: 0.9rem;
   
@@ -872,7 +872,7 @@ circle {
   }
   .contact-link p {
     white-space: unset;
-    font-size: 0.8rem;
+    font-size: 20px;
     }
     
  }
@@ -1147,11 +1147,6 @@ circle {
   .container {
     width: min(85%,1240px);
   }
-  
-
-  .about-block {
-    /* gap: 10%;   */
-  }
   .word-small {
     font-size: 18px;
   }
@@ -1191,9 +1186,6 @@ circle {
   }
   .teacher .subject > p {
     width: 50rem;
-  }
-  .teacher-bar {
-
   }
   .teacher-exp {
     font-size: 16px;
