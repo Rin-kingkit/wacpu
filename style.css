@@ -814,6 +814,9 @@ circle {
   .navi .nav a {
     font-size: 32px;
   }
+  .navi-bg-white {
+    height: 78vh;
+  }
   .banner {
     height: 72vh;
   }
