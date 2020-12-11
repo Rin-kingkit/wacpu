@@ -313,7 +313,9 @@ header{
 .subject h2 {
   margin: auto;
 }
-
+.subject .underline:after {
+  top: -6px;
+}
 
 .underline{
   z-index: 2;
@@ -826,6 +828,9 @@ circle {
     height: 0.42rem;
     border-radius: 0.1rem;
   }
+  .subject .underline:after {
+    top: -8px;
+}
   .about-content > .underline::after {
     top: -25px;
   }
@@ -997,6 +1002,9 @@ circle {
     top: -0.51rem;
     height: 0.64rem;
   }
+  .subject .underline:after {
+    top: -10px;
+}
   .about-content > .underline::after {
     top: -0.95rem;
     height: 0.56rem;
@@ -1156,6 +1164,9 @@ circle {
   .word-large{
   
   }
+  .subject .underline:after {
+    top: -9px;
+}
   .about-pic {
     width: 50%;
     margin-right: 10%;
