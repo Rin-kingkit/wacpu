@@ -1,0 +1,160 @@
+
+  .banner {
+      width: 100%;
+      background-color: #000;
+      height: 93%;
+      margin: auto;
+  }
+  .banner-style{
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 0.94rem;
+  }
+  
+  .down {
+    margin-top: auto;
+    margin-bottom: 3vh;
+    height: 2rem;
+    display: flex;
+  }
+  .down{
+    display: none;
+  }
+  .down img {
+    margin: auto;
+    width: 7%;
+    }
+  .gap {
+      background-color: var(--logo-green-middle);
+      width: 100%;
+  }
+
+/********** header ************/
+header {
+    height: 0;
+}
+.header-container {
+    top: 5vh;
+}
+
+/********** banner ************/
+.banner {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 565px;
+    -webkit-filter: brightness(65%);
+    filter: brightness(65%);
+}
+.home-banner{
+    background-image: url(../img/banner.jpg);
+}
+.course-banner{
+    background-image: url(../img/small-size/course-banner.jpg);
+    background-position: right;
+}
+.resume-banner{
+    background-image: url(../img/small-size/resume-banner.jpg);
+    background-position: right;
+}
+.banner>.container {
+    width: unset;
+}
+.banner-slogan {
+    flex-direction: column;
+    text-shadow: 0 0 11px #000000e6;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    text-align: center;
+}
+.banner-slogan h1,.banner-slogan p  {
+    color: #fff;
+
+}
+.banner-slogan h1 {
+    font-weight: bold;
+    margin-top: max(45vh,282px);
+    font-size: 34px;
+}
+.banner-slogan p {
+    line-height: 20px;
+    margin-top: 24px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .banner-slogan h1 {
+        font-size: 40px;
+    }
+    .banner-slogan p {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .banner-slogan h1 {
+        font-size: 44px;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    header {
+        height: 0;
+    }
+    .header-container {
+        border-radius: 10px;
+        top: 3vh;
+        padding: unset;
+    }
+    header > .container {
+        width: min(90%,960px);
+    }
+    .banner {
+        height: 100vh;
+    }
+    .banner > .container {
+        width: min(90%,960px);
+    }
+    .banner-slogan {
+        text-align: center;
+        height: 20vh;
+        border-radius: 5px;
+    }
+    .banner-slogan > .container {
+        width: unset;
+        margin: unset;
+    }
+    .banner-slogan h1 {
+        font-size: 50px;
+        margin-top: max(43vh, 282px);
+    }
+    .banner-slogan p {
+        margin-top: 14px;
+    }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    header > .container {
+        width: min(85%,1240px);
+    }
+    .banner > .container {
+        width: min(85%,1240px);
+    }
+    .banner-slogan h1 {
+        font-size: 54px;
+    }
+    .banner-slogan p {
+        letter-spacing: 3px;
+    }
+ }

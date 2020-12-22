@@ -1,0 +1,127 @@
+#contact {
+    padding: 2.5rem 0;
+  }
+  .contact-block {
+      width: 100%;
+      display: flex;
+      min-width: 19.0625rem;
+      padding: 2.5rem 0;
+  }
+  .green-block-style {
+    background-color: var(--logo-green-middle);
+  
+  }
+  .contact-content {
+    margin: auto;
+    height: 77.8%;
+    width: 83.7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+  }
+  
+  #contact h2 {
+    color: #fff;
+    font-weight: 400;
+  }
+  hr {
+    width: 100%;
+    color: #E8E8E8;
+    opacity: 59%;
+    margin-top: 1.25rem;
+    border: 0.02rem solid #E8E8E8;
+  }
+  .contact-link-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    width: 96%;
+  }
+  
+  .contact-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 17rem;
+    margin: 1.5625rem auto 0 auto;
+    
+  }
+  .contact-link a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .contact-link img {
+    transition: 0.3s;
+    margin-right: 2vw;
+      width: 1.2rem;
+      min-width: 1.2rem;
+  }
+  .contact-link a:hover img{
+    transform: rotate(-15deg);
+  }
+  .contact-link p {
+    color: #fff;
+    white-space: nowrap;
+    font-weight: 400;
+    font-family: PingFang TC;
+    font-size: 15px;
+  }
+  .contact-icon {
+    width: 7%;
+    position: absolute;
+    top: 28%;
+    display: none;
+    right: 5%;
+    transform-origin: left bottom;
+    animation: contactAnime 1s infinite forwards alternate ease-in-out;
+  }
+  @keyframes contactAnime{
+    0{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(8deg);
+    }
+  }
+
+    // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .contact-link {
+        width: 19rem;
+      }
+      .contact-link img {
+        width: 1.3rem;
+        min-width: 1.3rem;
+      }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .contact-link-box {
+        align-items: baseline;
+        margin: 3.5% auto auto auto;
+      }
+      .contact-link {
+        margin-top: 1.25rem;
+      }
+      .contact-link img {
+        margin-right: 5%;
+      }
+      .contact-link p {
+        white-space: unset;
+        font-size: 20px;
+        }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
