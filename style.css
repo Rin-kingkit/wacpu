@@ -87,7 +87,7 @@ h3 {
 }
 
 
-header{
+/* header{
   height: 66px;
   box-shadow: 0 3px 5px #0000000f;
   display: flex;
@@ -132,7 +132,6 @@ header{
 }
 .nav img {
   width: 22px;
-  /* top: 1px; */
 }
 
 @keyframes nav{
@@ -245,7 +244,7 @@ header{
 
 .back-fixed{
     overflow: hidden;
-}
+} */
 
 .border-radius-frame{
   border-radius: 0.3125rem;
@@ -709,7 +708,7 @@ circle {
   html{
     font-size: 18px;
   }
-  header {
+  /* header {
     height: 70px;
   }
   #logo {
@@ -721,7 +720,7 @@ circle {
   }
   .hamburger {
     width: min(9%,42px);
-}
+} */
   .word-small{
     font-size: 18px;
     letter-spacing: 2.5px;
@@ -733,9 +732,9 @@ circle {
   .word-large{
     font-size: 36px;
   }
-  .navi .nav a {
+  /* .navi .nav a {
     font-size: 28px;
-  }
+  } */
   .about {
     padding-bottom: 4.5rem;
   }
@@ -801,7 +800,7 @@ circle {
   .word-large{
     font-size: 40px;
   }
-  header {
+  /* header {
     height: 80px;
   }
   .header-container {
@@ -816,7 +815,7 @@ circle {
   }
   .navi-bg-white {
     height: 78vh;
-  }
+  } */
   .banner {
     height: 72vh;
   }
@@ -900,13 +899,10 @@ circle {
   .word-large{
     font-size: 40px;
   }
-  header {
+  /* header {
     height: 3rem;
   }
   
-  header > .container {
-    /* width: 94%; */
-  }
   .header-container {
     height: 4rem;
     border-radius: 2rem;
@@ -926,7 +922,7 @@ circle {
     align-items: center;
     justify-content: space-between;
     line-height: unset;
-  }
+  } */
   
 
   .container {
