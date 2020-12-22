@@ -10,7 +10,27 @@
     z-index: 3;
     cursor: pointer;
     display: none;
+
+    @media (min-width: 576px) { 
+        position: fixed;
+        right: 5vw;
+        bottom: 4vh; 
+    }
+    @media (min-width: 768px) { 
+        bottom: 5vh;
+        right: 2vw;
+     }
+    @media (min-width: 992px) { 
+        opacity: 1;
+        right: 3vw;
+        bottom: 6vh;
+     }
+    @media (min-width: 1200px) { 
+        right: 2vw;
+        bottom: 4vh;
+     }
 }
+
 .back-to-top-float {
     display: flex;
     align-items: center;
@@ -19,62 +39,29 @@
     background-color: var(--logo-green-middle);
     width: min(11.5vw,55px);
     height: min(11.5vw,55px);
-    
-}
-.back-to-top-float svg {
-    width: 46%;
-    top: 0;
-    transition: 0.2s ease-in-out;
-}
 
-.back-to-top-float:hover svg{
-    top: -3px;
-}
-
-
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-    .back-to-top-float-box {
-        position: fixed;
-        right: 5vw;
-        bottom: 4vh;
-    }
-    .back-to-top-float {
+    @media (min-width: 576px) { 
         width: 8vw;
-        height: 8vw;
+        height: 8vw; 
     }
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    .back-to-top-float-box {
-        bottom: 5vh;
-        right: 2vw;
-    }
-    .back-to-top-float {
+    @media (min-width: 768px) { 
         width: 5vw;
         height: 5vw;
-    }
-
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    .back-to-top-float-box {
-        opacity: 1;
-        right: 3vw;
-        bottom: 6vh;
-    }
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    .back-to-top-float-box {
-        right: 2vw;
-        bottom: 4vh;
-    }
-    .back-to-top-float {
+     }
+    @media (min-width: 1200px) { 
         width: min(60px,4vw);
         height: min(60px,4vw);
+     }
+    
+    svg {
+        width: 46%;
+        top: 0;
+        transition: 0.2s ease-in-out;
+    }
+    &:hover svg{
+        top: -3px;
     }
 }
+
+
+

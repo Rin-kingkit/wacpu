@@ -1,77 +1,62 @@
 main {
     width: 100%;
 }
+
 .subject {
    display: flex;
    flex-direction: column;
+   @media (min-width: 992px) { text-align: center; }
+
+   h2 {
+    margin: auto;
+  }
+  .underline:after {
+    top: -6px;
+    @media (min-width: 576px) {  }
+    @media (min-width: 768px) { 
+        height: 0.42rem;
+        border-radius: 0.1rem;
+        top: -8px;
+     }
+    @media (min-width: 992px) { 
+        top: -10px;
+        height: 0.64rem;
+    }
+    @media (min-width: 1200px) { top: -9px; }
+  }
+
+  p {
+    margin-top: 2.2rem;
+    word-break: break-all;
+    @media (min-width: 992px) { margin-top: 2rem; }
+  }
 }
-.subject h2 {
-  margin: auto;
-}
-.subject .underline:after {
-  top: -6px;
-}
+
 
 .underline{
   z-index: 2;
-}
-.underline::after {
-  content: "";
-  width: 104%;
-  top: -0.25rem;
-  left: -2%;
-  height: 0.4375rem;
-  position: relative;
-  display: block;
-  background-color: var(--logo-green-light);
-  z-index: -1;
-  border-radius: 0.125rem;
-  transition: 0.5s;
-}
-.subject p {
-  margin-top: 2.2rem;
-  word-break: break-all;
-}
-
-  // Small devices (landscape phones, 576px and up)
-  @media (min-width: 576px) {
-
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    .underline::after {
-        top: -0.32rem;
-        height: 0.42rem;
-        border-radius: 0.1rem;
-      }
-      .subject .underline:after {
-        top: -8px;
-    }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-    .subject {
-        text-align: center;
-      }
-      .subject p {
-        margin-top: 2rem;
-      }
-      .underline::after {
+  &::after {
+    content: "";
+    width: 104%;
+    top: -0.25rem;
+    left: -2%;
+    height: 0.4375rem;
+    position: relative;
+    display: block;
+    background-color: var(--logo-green-light);
+    z-index: -1;
+    border-radius: 0.125rem;
+    transition: 0.5s;
+    @media (min-width: 992px) { 
         top: -0.51rem;
         height: 0.64rem;
-      }
-      .subject .underline:after {
-        top: -10px;
-      }
+     }
+  }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    .subject .underline:after {
-        top: -9px;
-    }
-}
+
+
+
+
 
 

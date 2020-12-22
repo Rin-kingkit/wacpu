@@ -1,15 +1,27 @@
 #contact {
     padding: 2.5rem 0;
+    @media (min-width: 992px) { padding: 3.8rem 0; }
+
+    h2 {
+        color: #fff;
+        font-weight: 400;
+        @media (min-width: 992px) { 
+            font-size: 28px;
+            white-space: nowrap;
+         }
+        @media (min-width: 1200px) { font-size: 30px; }
+    }
   }
+
   .contact-block {
       width: 100%;
       display: flex;
       min-width: 19.0625rem;
       padding: 2.5rem 0;
+    @media (min-width: 992px) { padding: 1.8rem 0; }
   }
   .green-block-style {
     background-color: var(--logo-green-middle);
-  
   }
   .contact-content {
     margin: auto;
@@ -19,25 +31,46 @@
     flex-direction: column;
     align-items: center;
     align-items: center;
+    @media (min-width: 992px) { 
+        flex-direction: row;
+       width: 83%;
+       height: 6.8rem;
+     }
   }
   
-  #contact h2 {
-    color: #fff;
-    font-weight: 400;
-  }
+
   hr {
     width: 100%;
     color: #E8E8E8;
     opacity: 59%;
     margin-top: 1.25rem;
     border: 0.02rem solid #E8E8E8;
+    @media (min-width: 992px) { 
+        width: 1px;
+       height: 100%;
+       margin: 0;
+       margin-left: 3rem;
+     }
+     @media (min-width: 1200px) { margin-left: 3rem; }
   }
+  
   .contact-link-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 0.5rem;
     width: 96%;
+    @media (min-width: 768px) { 
+        align-items: baseline;
+        margin: 3.5% auto auto auto; 
+    }
+    @media (min-width: 992px) { 
+        margin: auto;
+        height: 100%;
+        margin-left: 3rem;
+        width: unset;
+     }
+    @media (min-width: 1200px) { margin-left: 3rem; }
   }
   
   .contact-link {
@@ -46,29 +79,51 @@
     align-items: center;
     width: 17rem;
     margin: 1.5625rem auto 0 auto;
+    @media (min-width: 576px) { width: 19rem; }
+    @media (min-width: 768px) { margin-top: 1.25rem; }
+    @media (min-width: 992px) { margin: auto auto auto 0; }
+
+    a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        @media (min-width: 992px) { width: min-content; }
+        &:hover img{
+            transform: rotate(-15deg);
+        }
+    }
+    img {
+        transition: 0.3s;
+        margin-right: 2vw;
+        width: 1.2rem;
+        min-width: 1.2rem;
+        @media (min-width: 576px){
+              width: 1.3rem;
+              min-width: 1.3rem;
+        }
+        @media (min-width: 768px){ margin-right: 5%; }
+        @media (min-width: 992px){ margin-right: 1rem; }
+    }
+    p {
+        color: #fff;
+        white-space: nowrap;
+        font-weight: 400;
+        font-family: PingFang TC;
+        font-size: 15px;
+        @media (min-width: 768px){ 
+            white-space: unset;
+            font-size: 20px;
+        }
+        @media (min-width: 992px){ 
+            white-space: nowrap;
+            font-size: 18px;
+            letter-spacing: 1px;
+         }
+        @media (min-width: 1200px){ font-size: 18px; }
+    }
     
   }
-  .contact-link a {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .contact-link img {
-    transition: 0.3s;
-    margin-right: 2vw;
-      width: 1.2rem;
-      min-width: 1.2rem;
-  }
-  .contact-link a:hover img{
-    transform: rotate(-15deg);
-  }
-  .contact-link p {
-    color: #fff;
-    white-space: nowrap;
-    font-weight: 400;
-    font-family: PingFang TC;
-    font-size: 15px;
-  }
+
   .contact-icon {
     width: 7%;
     position: absolute;
@@ -77,7 +132,14 @@
     right: 5%;
     transform-origin: left bottom;
     animation: contactAnime 1s infinite forwards alternate ease-in-out;
+    @media (min-width: 992px) { display: block; }
+    @media (min-width: 1200px) { 
+        width: 8%;
+        top: 24%;
+        right: 7%;
+     }
   }
+
   @keyframes contactAnime{
     0{
         transform: rotate(-5deg);
@@ -87,103 +149,3 @@
     }
   }
 
-    // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    .contact-link {
-        width: 19rem;
-      }
-      .contact-link img {
-        width: 1.3rem;
-        min-width: 1.3rem;
-      }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    .contact-link-box {
-        align-items: baseline;
-        margin: 3.5% auto auto auto;
-      }
-      .contact-link {
-        margin-top: 1.25rem;
-      }
-      .contact-link img {
-        margin-right: 5%;
-      }
-      .contact-link p {
-        white-space: unset;
-        font-size: 20px;
-        }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-    #contact{
-        padding: 3.8rem 0;
-      }
-      .contact-block {
-       padding: 1.8rem 0;
-     }
-     .green-block-style {
-      
-     }
-     .contact-content {
-       flex-direction: row;
-       width: 83%;
-       height: 6.8rem;
-     }
-     #contact h2 {
-       font-size: 28px;
-       white-space: nowrap;
-     }
-     hr {
-       width: 1px;
-       height: 100%;
-       margin: 0;
-       margin-left: 3rem;
-   }
-   .contact-link-box {
-     margin: auto;
-     height: 100%;
-     margin-left: 3rem;
-     width: unset;
-   }
-   .contact-link {
-     margin: auto auto auto 0;
-   }
-   .contact-link img {
-     margin-right: 1rem;
-   }
-   .contact-link a {
-     width: min-content;
-   }
-   .contact-link p {
-     white-space: nowrap;
-     font-size: 18px;
-     letter-spacing: 1px;
-   }
-   .contact-icon{
-     display: block;
-   }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    #contact h2{
-        font-size: 30px;
-      }
-      hr{
-        margin-left: 3rem;
-      }
-      .contact-link-box{
-        margin-left: 3rem;
-      }
-      .contact-link p {
-        font-size: 18px;
-      }
-      .contact-icon {
-        width: 8%;
-        top: 24%;
-        right: 7%;
-      }
-}

@@ -1,55 +1,31 @@
-
-  .banner {
-      width: 100%;
-      background-color: #000;
-      height: 93%;
-      margin: auto;
-  }
-  .banner-style{
-    background-image: url(img/banner.jpg);
-    background-size: cover;
-    background-position-x: center;
-    border-radius: 0.94rem;
-  }
-  
-  .down {
-    margin-top: auto;
-    margin-bottom: 3vh;
-    height: 2rem;
-    display: flex;
-  }
-  .down{
-    display: none;
-  }
-  .down img {
-    margin: auto;
-    width: 7%;
-    }
-  .gap {
-      background-color: var(--logo-green-middle);
-      width: 100%;
-  }
-
-/********** header ************/
-header {
-    height: 0;
-}
-.header-container {
-    top: 5vh;
-}
-
-/********** banner ************/
 .banner {
     width: 100%;
     height: 100vh;
     border-radius: 0;
+    background-color: #000;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 565px;
     -webkit-filter: brightness(65%);
     filter: brightness(65%);
+    @media (min-width: 992px) { height: 100vh; }
+
+    & > .container {
+        width: unset;
+        @media (min-width: 992px) { width: min(90%,960px); }
+        @media (min-width: 1200px) { width: min(85%,1240px); }
+    }
 }
+  .banner-style{
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 0.94rem;
+    @media (min-width: 992px) { border-radius: 0 0 0 0.94rem; }
+  }
+
+
 .home-banner{
     background-image: url(../img/banner.jpg);
 }
@@ -61,9 +37,9 @@ header {
     background-image: url(../img/small-size/resume-banner.jpg);
     background-position: right;
 }
-.banner>.container {
-    width: unset;
-}
+
+
+
 .banner-slogan {
     flex-direction: column;
     text-shadow: 0 0 11px #000000e6;
@@ -71,100 +47,44 @@ header {
     height: 100vh;
     position: absolute;
     text-align: center;
-}
-.banner-slogan h1,.banner-slogan p  {
-    color: #fff;
-
-}
-.banner-slogan h1 {
-    font-weight: bold;
-    margin-top: max(45vh,282px);
-    font-size: 34px;
-}
-.banner-slogan p {
-    line-height: 20px;
-    margin-top: 24px;
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-    .banner-slogan h1 {
-        font-size: 40px;
-    }
-    .banner-slogan p {
-        font-size: 18px;
-        margin-top: 20px;
-    }
- }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    .banner-slogan h1 {
-        font-size: 44px;
-    }
- }
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    .banner-block {
-        height: calc(100vh - 3rem);
-      }
-      .banner {
-        margin: 0 auto auto auto;
-      }
-      .banner-style {
-        border-radius: 0 0 0 0.94rem;
-      }
-
-    header {
-        height: 0;
-    }
-    .header-container {
-        border-radius: 10px;
-        top: 3vh;
-        padding: unset;
-    }
-    header > .container {
-        width: min(90%,960px);
-    }
-    .banner {
-        height: 100vh;
-    }
-    .banner > .container {
-        width: min(90%,960px);
-    }
-    .banner-slogan {
+    @media (min-width: 992px) { 
         text-align: center;
         height: 20vh;
         border-radius: 5px;
     }
-    .banner-slogan > .container {
-        width: unset;
-        margin: unset;
+    &>.container {
+        @media (min-width: 992px) { 
+            width: unset;
+            margin: unset;
+        } 
     }
-    .banner-slogan h1 {
-        font-size: 50px;
-        margin-top: max(43vh, 282px);
-    }
-    .banner-slogan p {
-        margin-top: 14px;
-    }
- }
 
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    header > .container {
-        width: min(85%,1240px);
+    h1{
+        color: #fff;
+        font-weight: bold;
+        margin-top: max(45vh,282px);
+        font-size: 34px;
+        @media (min-width: 576px) { font-size: 40px; }
+        @media (min-width: 768px) { font-size: 44px; }
+        @media (min-width: 992px) { 
+            font-size: 50px;
+            margin-top: max(43vh, 282px);
+         }
+        @media (min-width: 1200px) { font-size: 54px; }
     }
-    .banner > .container {
-        width: min(85%,1240px);
+    p{
+        color: #fff;
+        line-height: 20px;
+        margin-top: 24px;
+        font-size: 15px;
+        letter-spacing: 2px;
+        @media (min-width: 576px) { 
+            font-size: 18px;
+            margin-top: 20px; 
+        }
+        @media (min-width: 992px) { margin-top: 14px; }
+        @media (min-width: 1200px) { letter-spacing: 3px; }
     }
-    .banner-slogan h1 {
-        font-size: 54px;
-    }
-    .banner-slogan p {
-        letter-spacing: 3px;
-    }
- }
+}
+
+

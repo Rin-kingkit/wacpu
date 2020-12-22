@@ -1,13 +1,18 @@
-header{
+  header{
+    height: 0;
     box-shadow: 0 3px 5px #0000000f;
     display: flex;
     background-color: var(--logo-green-middle);
     z-index: 4;
   }
+    header > .container {
+        @media (min-width: 1200px) { width: min(85%,1240px);}
+    }
+
   .header-container {
+    top: 5vh;
     display: flex;
     width: 100%;
-    border-radius: 0.25rem;
     margin: auto;
     align-items: center;
     justify-content: space-between;
@@ -23,14 +28,14 @@ header{
         padding: 0 3% 0 3%;
      }
     @media (min-width: 992px) { 
+        top: 3vh;
+        padding: unset;
         height: 4rem;
         border-radius: 2rem;
-        top: 1rem;
         z-index: 2;
-        padding: 0 min(6.4%,65px);
      }
   }
-  
+
   #logo {
     width: 8.5rem;
     @media (min-width: 576px) { width: 9.5rem; }
