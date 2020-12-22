@@ -132,12 +132,45 @@ html{
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+    html{
+        font-size: 18px;     
+      }
+      .word-small{
+        font-size: 17px;
+        line-height: 1.5;
+      }
+      .word-medium{
+        font-size: 36px;
+      }
+      .word-large{
+        font-size: 40px;
+      }
+      .container {
+        width: min(90%,960px);
+      }
 
+      .home-effect:after{
+        width: 0%;
+      }
+      .home-effect-on:after{
+        width: 104%;
+        transition: 0.8s;
+      }
+     
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
+    html{
+        font-size: ;
+      }
+      .container {
+        width: min(85%,1240px);
+      }
+      .word-small {
+        font-size: 18px;
+      }
+      
 }
 
 

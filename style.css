@@ -1,5 +1,5 @@
-/* 1 rem = 16 px */
-/* html{
+1 rem = 16 px
+html{
   font-size: 16px;  
 }
 html{
@@ -83,10 +83,10 @@ h3 {
 }
 .word-large{
   font-size: 32px;
-} */
+}
 
 
-/* header{
+header{
   height: 66px;
   box-shadow: 0 3px 5px #0000000f;
   display: flex;
@@ -243,18 +243,18 @@ h3 {
 
 .back-fixed{
     overflow: hidden;
-} */
+}
 
-/* .border-radius-frame{
+.border-radius-frame{
   border-radius: 0.3125rem;
 }
 
 .container{
   width: min(90%);
   margin: auto;
-} */
+}
 
-/* .banner-block {
+.banner-block {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -290,9 +290,9 @@ h3 {
 .gap {
     background-color: var(--logo-green-middle);
     width: 100%;
-} */
+}
 /********************** main ***********************/
-/* main {
+main {
     width: 100%;
 }
 
@@ -420,9 +420,9 @@ h3 {
 .about02-content h3 {
   grid-column: 1/2;
   justify-self: left;
-} */
+}
 /********************** teacher ***********************/
-/* .teacher {
+.teacher {
   padding-top: 4rem;
   padding-bottom: 4rem;
   background: radial-gradient(circle at center,#63616A 10%,#4E4D52 90%);
@@ -541,13 +541,13 @@ h3 {
   font-weight: bold;
   line-height: 0.9rem;
   
-} */
+}
 
 
 
 
   /********************** contact ***********************/
-/* #contact {
+#contact {
   padding: 2.5rem 0;
 }
 .contact-block {
@@ -634,7 +634,7 @@ hr {
   100%{
       transform: rotate(8deg);
   }
-} */
+}
 
 
 
@@ -642,11 +642,11 @@ hr {
 
 
 /********************** teacher effect *********************/
-/* .circle-small{
+.circle-small{
   transform: scale(0.5);
-} */
+}
 /*********************** decoration *******************/
-/* .decoration-circle{
+.decoration-circle{
   position: absolute;
   z-index: -1;
   height: auto;
@@ -671,7 +671,7 @@ circle {
   right: -25%;
   top: 13%;
   width: 60%;
-} */
+}
 
 
 
@@ -680,7 +680,7 @@ circle {
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  /* html{
+  html{
     font-size: 18px;
   }
   .word-small{
@@ -693,9 +693,9 @@ circle {
   }
   .word-large{
     font-size: 36px;
-  } */
+  }
 
-  /* .about {
+  .about {
     padding-bottom: 4.5rem;
   }
   .about-pic {
@@ -712,9 +712,9 @@ circle {
   }
   .number{
     font-size: 100px;
-  } */
+  }
 
-  /* .teacher {
+  .teacher {
     padding-bottom: 2rem;
   }
   .teacher-content {
@@ -736,21 +736,21 @@ circle {
   .teacher-exp{
     font-size: 14px;
     line-height: 18px;
-  } */
+  }
 
-  /* .contact-link {
+  .contact-link {
     width: 19rem;
   }
   .contact-link img {
     width: 1.3rem;
     min-width: 1.3rem;
-  } */
+  }
   
  }
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  /* html{
+  html{
     font-size: 24px;
   }
   .word-small{
@@ -761,25 +761,25 @@ circle {
   }
   .word-large{
     font-size: 40px;
-  } */
+  }
   
-  /* .banner {
+  .banner {
     height: 72vh;
   }
   .banner-block {
     height: calc(94vh - 80px);
-  } */
+  }
 
-  /* .underline::after {
+  .underline::after {
     top: -0.32rem;
     height: 0.42rem;
     border-radius: 0.1rem;
   }
   .subject .underline:after {
     top: -8px;
-} */
+}
 
-  /* .about-content > .underline::after {
+  .about-content > .underline::after {
     top: -25px;
   }
   .about-pic {
@@ -796,22 +796,22 @@ circle {
   }
   .number{
     font-size: 134px;
-  } */
+  }
 
-  /* .teacher-name {
+  .teacher-name {
     font-size: 32px;
   }
   .teacher-exp{
     font-size: 18px;
     max-width: 13.25rem;
     line-height: 1.4;
-  } */
+  }
 
-  /* .container {
+  .container {
     width: min(88%);
-  } */
+  }
 
-  /* .contact-link-box {
+  .contact-link-box {
     align-items: baseline;
     margin: 3.5% auto auto auto;
   }
@@ -824,7 +824,7 @@ circle {
   .contact-link p {
     white-space: unset;
     font-size: 20px;
-    } */
+    }
     
  }
 
@@ -843,35 +843,10 @@ circle {
   .word-large{
     font-size: 40px;
   }
-  /* header {
-    height: 3rem;
-  }
-  
-  .header-container {
-    height: 4rem;
-    border-radius: 2rem;
-    top: 1rem;
-    z-index: 2;
-    padding: 0 min(6.4%,65px);
-  }
-  #logo {
-    width: 12rem;
-}
-  .hamburger{
-    display: none;
-  }
-  .nav-bar{
-    display: flex;
-    width: max(28%,350px);
-    align-items: center;
-    justify-content: space-between;
-    line-height: unset;
-  } */
-  
-
   .container {
     width: min(90%,960px);
   }
+
   .banner-block {
     height: calc(100vh - 3rem);
   }
@@ -882,15 +857,27 @@ circle {
   .banner-style {
     border-radius: 0 0 0 0.94rem;
   }
-  .about {  
-    padding-top: 4.5rem;
-    padding-bottom: 5rem;
-  }
+
+
+
   .subject {
     text-align: center;
   }
   .subject p {
     margin-top: 2rem;
+  } 
+    .underline::after {
+    top: -0.51rem;
+    height: 0.64rem;
+  }
+  .subject .underline:after {
+    top: -10px;
+  }
+ 
+
+    .about {  
+    padding-top: 4.5rem;
+    padding-bottom: 5rem;
   }
   .about-block {
     display: flex;
@@ -911,10 +898,7 @@ circle {
   .about03 {
     height: 15.5rem;
   }
-  
-
-
-  .about-pic {
+ .about-pic {
     height: unset;
     width: 58%;
     height: 100%;
@@ -928,7 +912,6 @@ circle {
   .about03-pic {
     margin-right: 7%;
   }
-
   .about-content {
     display: flex;
     flex-direction: column;
@@ -940,14 +923,7 @@ circle {
   }
   .about-content h3 {
     margin-top: -2rem;
-  }
-  .underline::after {
-    top: -0.51rem;
-    height: 0.64rem;
-  }
-  .subject .underline:after {
-    top: -10px;
-}
+  } 
   .about-content > .underline::after {
     top: -0.95rem;
     height: 0.56rem;
@@ -959,6 +935,8 @@ circle {
     font-size: 126px;
     top: -18px;
   }
+ 
+
   .teacher{
     padding-top: 4rem;
     padding-bottom: 1rem;
@@ -1101,12 +1079,7 @@ circle {
   .word-small {
     font-size: 18px;
   }
-  .word-medium{
 
-  }
-  .word-large{
-  
-  }
   .subject .underline:after {
     top: -9px;
 }
@@ -1134,6 +1107,7 @@ circle {
     right: 42%;
     width: 41%;
   }
+
   .teacher{
     padding-top: 4.5rem;
     padding-bottom: 2rem;
@@ -1146,7 +1120,8 @@ circle {
     font-weight: bold;
     max-width: 270px;
 }
-  #contact h2{
+
+#contact h2{
     font-size: 30px;
   }
   hr{
@@ -1163,4 +1138,5 @@ circle {
     top: 24%;
     right: 7%;
   }
+  
 }

@@ -56,12 +56,26 @@ main {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-
+    .subject {
+        text-align: center;
+      }
+      .subject p {
+        margin-top: 2rem;
+      }
+      .underline::after {
+        top: -0.51rem;
+        height: 0.64rem;
+      }
+      .subject .underline:after {
+        top: -10px;
+      }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
+    .subject .underline:after {
+        top: -9px;
+    }
 }
 
 

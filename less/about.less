@@ -161,10 +161,108 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+    .about {  
+        padding-top: 4.5rem;
+        padding-bottom: 5rem;
+      }
+      .about-block {
+        display: flex;
+        flex-direction: row;
+        height: 20rem;
+      }
+      .about-container {
+        margin-top: 4rem;
+      }
+      .about02 {
+        height: 20rem;
+        flex-direction: row-reverse;
+      }
+      .about02, .about03 {
+        margin-top: 10rem;
+        height: 18rem;
+    }
+      .about03 {
+        height: 15.5rem;
+      }
+     .about-pic {
+        height: unset;
+        width: 58%;
+        height: 100%;
+      }
+      .about01-pic {
+        margin-right: 7%;
+      }
+      .about02-pic {
+        margin-left: 7%;
+      }
+      .about03-pic {
+        margin-right: 7%;
+      }
+      .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
+        background-size: unset;
+        background-position: center;
+        width: 34%;
+      }
+      .about-content h3 {
+        margin-top: -2rem;
+      }
+      .about-content > .underline::after {
+        top: -0.95rem;
+        height: 0.56rem;
+      }
+      .depiction {
+        line-height: 1.4rem;
+      }
+      .number {
+        font-size: 126px;
+        top: -18px;
+      }
 
+      .about01 .decoration-circle {
+        right: 37%;
+        top: 5%;
+        width: 49%;
+      }
+      .about02 .decoration-circle {
+        left: 36%;
+        top: 42%;
+        width: 28%;
+        opacity: 0.45;
+      }
+      .about03 .decoration-circle {
+        right: 68%;
+        opacity: 0.7;
+      }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
+    .about-pic {
+        width: 50%;
+        margin-right: 10%;
+      }
+      .about-content {
+        width: 40%;
+      }
+      .about-container {
+        margin-top: 6rem;
+    }
+      .about02 .about-pic{
+        margin-left: 10%;
+        margin-right: 0;
+      }
+      .about-content h3{
+        line-height: unset;
+      }
+      .about-content > .underline::after {
+        top: -0.4rem;
+      }
+      .about01 .decoration-circle {
+        right: 42%;
+        width: 41%;
+      }
 }

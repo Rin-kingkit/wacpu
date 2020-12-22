@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
 
 var windowW = $(window).width()
 
@@ -31,7 +31,7 @@ function homeEffect(){
     })
 }
 
-$('document').ready(function(){
+
     if(windowW>992){
         homeEffect()
     }
