@@ -1,0 +1,69 @@
+.photo {
+    width: 100%;
+    background-color: #4E4D52;
+    padding: 4rem 0 4rem 0;
+    @media (min-width: 576px) { padding: 4rem 0; }
+    h2 {
+        color: #fff;
+    }
+    .underline::after {
+        background-color: var(--logo-yellow);
+    }
+}
+.photo-frame {
+    width: 100%;
+    height: 765px;
+    overflow: hidden;
+    margin-top: 2.2rem;
+    @media (min-width: 576px) { height: 1230px; }
+    @media (min-width: 768px) { height: 895px; }
+    @media (min-width: 992px) { height: 1080px; }
+    @media (min-width: 1200px) { height: 580px; }
+}
+.photo-container {
+    width: min(85%);
+    margin: auto;
+    display: grid;
+    flex-direction: column;
+    gap: 1.875rem;
+    @media (min-width: 576px) { width: min(90%); }
+    @media (min-width: 768px) { 
+        width: min(90%);
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 4%;
+        grid-row-gap: 0.2rem;
+    }
+    @media (min-width: 1200px) { 
+        grid-template-columns: repeat(3,1fr);
+        width: min(85%,1640px);
+        grid-column-gap: 2%;
+    }
+}
+.photo-box {
+    width: 100%;
+    @media (min-width: 768px) { height: 90%; }
+}
+.photo-img {
+    width: 100%;
+    height: auto;
+    background-color: var(--logo-yellow);
+    @media (min-width: 768px) { 
+        height: 100%;
+        object-fit: cover; 
+    }
+}
+
+.photo-btn {
+    background-color: var(--logo-yellow);
+    color: #fff;
+    text-align: center;
+    margin: 2rem auto 0 auto;
+    @media (min-width: 992px) { padding: 0px 2% 0 5%; }
+    @media (min-width: 1200px) { padding: 0 24px 0 68px; }
+    svg {
+        width: 26px;
+        @media (min-width: 768px) { width: 28px; }
+    }
+}
+

@@ -1,16 +1,4 @@
-:root{
-    --word-color:#2F2F2F;
-    --logo-yellow:#F4AA14;
-    --logo-green:#0B8D97;
-    --logo-yellow-light:#FFD06F;
-    --logo-green-light:#18CCD9;
-    --background-color:#fff;
-    --close-white-color:#FDFEFC;
-    --logo-green-middle:#10A4AF;
-    --word-color-light:#313131;
-    --word-color-light-light:#696969;
-    --bg-dark:#4E4D52;
-  }
+
 *{
     position: relative;
 }
