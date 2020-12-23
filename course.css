@@ -16,13 +16,6 @@ h6 {
     max-width: max-content;
 }
 
-/* .course-banner-style{
-    background-image: url(img/course-banner.JPG);
-    height: 25rem;
-    margin: unset;
-    background-position-x: right;
-    background-repeat: no-repeat;
-} */
 .course-banner-style{
     background-image: url(img/course-banner.JPG);
 }
