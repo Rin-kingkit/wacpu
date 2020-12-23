@@ -30,7 +30,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: center;
     @media (min-width: 992px) { 
         flex-direction: row;
         width: 83%;
@@ -96,10 +95,10 @@
         transition: 0.3s;
         margin-right: 2vw;
         width: 1.2rem;
-        min-width: 1.2rem;
+        min-width: $width;
         @media (min-width: 576px){
               width: 1.3rem;
-              min-width: 1.3rem;
+              min-width: $width;
         }
         @media (min-width: 768px){ margin-right: 5%; }
         @media (min-width: 992px){ margin-right: 1rem; }
@@ -153,20 +152,23 @@
     }
   }
 
+  .rotate(@deg){
+    transform: rotate(@deg);
+  }
   @keyframes contactAnime{
     0{
-        transform: rotate(-5deg);
+        .rotate(-5deg)
     }
     100%{
-        transform: rotate(8deg);
+        .rotate(8deg)
     }
   }
   @keyframes howAnime {
     0{
-        transform: rotate(-5deg);
+        .rotate(-5deg)
     }
     100%{
-        transform: rotate(15deg);
+        .rotate(15deg)
     }
   }
 
@@ -192,17 +194,14 @@
               line-height: 1.8rem;
               font-size: 18px;
           }
-          @media (min-width: 1200px) {  }
       }
   }
   .contact-link-box {
       margin-top: 1.25rem;
-      @media (min-width: 576px) {  }
       @media (min-width: 768px) { align-items: unset; }
       @media (min-width: 992px) { 
           margin: auto auto auto 3rem;
           height: unset; 
       }
-      @media (min-width: 1200px) {  }
   }
 }
