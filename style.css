@@ -1,4 +1,4 @@
-1 rem = 16 px
+/* 1 rem = 16 px */
 html{
   font-size: 16px;  
 }
@@ -335,8 +335,6 @@ main {
   background-color: var(--logo-yellow);
 }
 
-
-
 .subject p {
   margin-top: 2.2rem;
   word-break: break-all;
@@ -344,7 +342,6 @@ main {
 .about-container {
   margin-top: 3.125rem;
   width: 100%;
-  height: ;
 }
 .about02,.about03 {
   margin-top: 6.23rem;
@@ -1064,9 +1061,8 @@ circle {
    transition: 0.8s;
  }
 
-
-
 }
+
 
 /* / Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 

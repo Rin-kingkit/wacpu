@@ -2,41 +2,71 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
     background: radial-gradient(circle at center,#63616A 10%,#4E4D52 90%);
+    @media (min-width: 576px) { padding-bottom: 2rem; }
+    @media (min-width: 992px) { 
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+     }
+    @media (min-width: 1200px) { 
+        padding-top: 4.5rem;
+        padding-bottom: 2.5rem;
+     }
+
+    .subject{
+      &>h2{
+        color:#fff;
+      }
+      &>p{
+        color:var(--close-white-color);
+        @media (min-width: 992px) { 
+            width: 44rem;
+            margin: 2rem auto 0 auto;
+            text-align: left;
+         }
+         @media (min-width: 1200px) { width: 50rem; }
+        }
+    }
   }
-  .teacher .subject>h2{
-    color:#fff;
-  }
-  .teacher .subject>p{
-    color:var(--close-white-color);
-  }
+
   .teacher-content {
     margin-top: 2rem;
     height: 70vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (min-width: 576px) { height: 60vw; }
+    @media (min-width: 992px) { 
+        height: 33vw;
+        margin-top: 1.6rem;
+        min-height: 420px;
+     }
   }
   .teacher-arrow{
     width: 5%;
     transition: 0.1s ease-out;
     opacity: 0.5;
+    @media (min-width: 992px) { width: 3%; }
+
+    img{
+      width: 100%;
+    }
   }
-  .teacher-arrow img{
-    width: 100%;
-  }
+  
   .arrow-pre-active{
     opacity: 1;
     cursor: pointer;
-  }
-  .arrow-pre-active:hover{
-    transform: translateX(-5px);
+
+    &:hover{
+      transform: translateX(-5px);
+    }
   }
   .arrow-next-active{
     opacity: 1;
     cursor: pointer;
-  }
-  .arrow-next-active:hover {
-    transform: translateX(5px);
+
+    &:hover {
+      transform: translateX(5px);
+    }
   }
   
   .teacher-frame {
@@ -45,23 +75,26 @@
     height: max(65vw,15rem);
     scroll-snap-type: x mandatory;
     scrollbar-color: rgba(255, 255, 255, 0.26) transparent;
-    scrollbar-width: thin;
     scroll-behavior: smooth;
     pointer-events: none;
-  }
-  .teacher-frame{
     -ms-overflow-style: none;  
-    scrollbar-width: none; 
-  }
-  
-  .teacher-frame::-webkit-scrollbar {
-    background-color: transparent;
-    height: 5px;
-    display: none;
-  }
-  .teacher-frame::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.26);
-    border-radius: 20px;  
+    scrollbar-width: none;
+    @media (min-width: 576px) { height: max(55vw,15rem); }
+    @media (min-width: 992px) { 
+        width: 494px;
+        height: 23.44rem;
+     }
+
+
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      height: 5px;
+      display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.26);
+      border-radius: 20px;  
+    }
   }
   
   .teacher-bar {
@@ -72,6 +105,7 @@
   .teacher-box {
     width: max(70vw,15rem);
     height: 100%;
+    @media (min-width: 992px) { width: 494px; }
   }
   .teacher-circle {
     width: max(60vw,14rem);
@@ -81,9 +115,20 @@
     scroll-snap-align: center;
     transition: 0.5s;
     margin: auto;
-  }
-  .teacher-circle:nth-of-type(7){
-    margin-right: 0;
+    @media (min-width: 576px) { 
+        width: max(54vw,14rem);
+        height: max(54vw,14rem);
+     }
+    @media (min-width: 768px) {  }
+    @media (min-width: 992px) { 
+        width: 21.44rem;
+        height: 21.44rem;
+     }
+    @media (min-width: 1200px) {  }
+
+    &:nth-of-type(7){
+      margin-right: 0;
+    }
   }
   .teacher-circle-style{
     border: 0.1875rem solid var(--word-color);
@@ -98,14 +143,25 @@
     justify-content: space-between;
     padding-top: 14%;
     padding-bottom: 16.6%;
+    @media (min-width: 992px) {
+        padding-top: 4rem;
+        justify-content:unset;
+    }
   }
   .teacher-photo {
     width: max(3.5rem,24%);
+    @media (min-width: 992px) { width: 5.12rem; }
   }
   .teacher-name {
     font-size: 20px;
     font-weight: 500;
     font-weight: bold;
+    @media (min-width: 576px) { font-size: 26px; }
+    @media (min-width: 768px) { font-size: 32px; }
+    @media (min-width: 992px) { 
+      font-size: 28px;
+      margin-top: 18px;
+     }
   }
   .teacher-exp {
     font-size: 12px;
@@ -116,120 +172,32 @@
     max-width: 84%;
     font-weight: bold;
     line-height: 0.9rem;
+    @media (min-width: 576px) { 
+      font-size: 14px;
+      line-height: 18px;
+     }
+    @media (min-width: 768px) { 
+        font-size: 18px;
+        max-width: 13.25rem;
+        line-height: 1.4;
+     }
+    @media (min-width: 992px) { 
+        font-size: 16px;
+        line-height: 1.2;
+        max-width: 250px;
+        margin-top: 0.6rem;
+        font-weight: bold;
+     }
+    @media (min-width: 1200px) { 
+        font-size: 16px;
+        font-weight: bold;
+        max-width: 270px;
+     }
     
   }
 
 .teacher .underline::after{
     background-color: var(--logo-yellow);
   }
-  .circle-small{
-    transform: scale(0.5);
-  }
 
-    // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    .teacher {
-        padding-bottom: 2rem;
-      }
-      .teacher-content {
-        height: 60vw;
-      }
-      .teacher-frame {
-        height: max(55vw,15rem);
-      }
-      .teacher-bar {
-    
-      }
-      .teacher-circle {
-        width: max(54vw,14rem);
-        height: max(54vw,14rem);
-      }
-      .teacher-name {
-        font-size: 26px;
-      }
-      .teacher-exp{
-        font-size: 14px;
-        line-height: 18px;
-      }
-}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    .teacher-name {
-        font-size: 32px;
-      }
-      .teacher-exp{
-        font-size: 18px;
-        max-width: 13.25rem;
-        line-height: 1.4;
-      }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-    .teacher{
-        padding-top: 4rem;
-        padding-bottom: 1rem;
-      }
-      .teacher .subject > p {
-        width: 44rem;
-        margin: 2rem auto 0 auto;
-        text-align: left;
-      }
-      .teacher-circle {
-        width: 21.44rem;
-        height: 21.44rem;
-      }
-      .teacher-content {
-        height: 33vw;
-        margin-top: 1.6rem;
-        min-height: 420px;
-      }
-      .teacher-frame {
-        width: 27.44rem;
-        height: 23.44rem;
-      }
-      .teacher-bar{
-    
-      }
-      .teacher-box {
-        width: 27.44rem;
-    }
-      .teacher-arrow {
-        width: 3%;
-      }
-      .teacher-photo {
-        width: 5.12rem;
-    }
-        .teacher-circle-inside {
-        padding-top: 4rem;
-        justify-content:unset;
-      }
-        .teacher-name {
-          font-size: 28px;
-        margin-top: 1.064rem;
-      }
-        .teacher-exp {
-          font-size: 16px;
-          line-height: 1.2;
-        max-width: 250px;
-        margin-top: 0.6rem;
-        font-weight: bold;
-      }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    .teacher{
-        padding-top: 4.5rem;
-        padding-bottom: 2rem;
-      }
-      .teacher .subject > p {
-        width: 50rem;
-      }
-      .teacher-exp {
-        font-size: 16px;
-        font-weight: bold;
-        max-width: 270px;
-    }
-}
