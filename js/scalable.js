@@ -1,3 +1,4 @@
+// 手機無法雙擊
 window.onload = () => {
     document.addEventListener('touchstart', (event) => {
       if (event.touches.length > 1) {
