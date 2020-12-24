@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    setTimeout(function(){  //設定讀取後1毫秒才執行
 
     //list
 
@@ -22,5 +23,6 @@ $(document).ready(function(){
         $('.photo-btn').fadeOut()
     })
 
+    },100)
 })
 
